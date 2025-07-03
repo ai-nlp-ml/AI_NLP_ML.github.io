@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
+<title>GIAN course on Deep Learning Techniques for Conversational Artificial Intelligence, April 13-24, 2022: AI-NLP-ML Group IIT Patna</title>
+<link rel="shortcut icon" href="images/front_logo.ico" >
+<link rel="stylesheet" href="layout/styles/styles.css" type="text/css" />
+<link href="css/menu.css" rel="stylesheet">
+<style>
+/* THIS IS FOR COLLABORATION AND PROJECTS */
+#shape1 {
+    border-radius: 25px;
+    border: 2px solid #2D82B9;
+    padding: 0px; 
+    width: 150px;
+    height: 130px;    
+}
+/* THIS IS FOR AINMG PHOTO */
+#shape2 {
+    border-radius: 25px;
+    border: 2px solid #2D82B9;
+    padding: 5px; 
+    width: 250px;
+    height: 150px;    
+}
+</style>
+<style>
+/* THIS IS FOR HEADER PHOTO */
+    #shape3 {
+    border-radius: 25px;
+    background: #2D82B9 ;
+    padding: 0px; 
+    width: 100%;
+    height: 160px;  
+    margin-top:10px;
+    margin-bottom:10px;  
+     
+}
+#shape4 {
+      border-radius: 25px;
+    background: #2D82B9;
+    padding: 0px; 
+       
+}
+#heading-h1{
+    font-weight:normal;
+	font-size:30px;
+}
+#heading-p{
+    font-weight:normal;
+	font-size:24px;
+}
+</style>
+<link rel="stylesheet" href="css/style2.css" type="text/css" media="screen" />
+
+</head>
+<body>
+<div id="wrapper" >
+      <div class="columns-container">
+  <div class="columns-wrapper">
+  <!--########################################## HEADER STARTS HERE.#################################################### -->
+   <div id="title-heading">
+    <!--  <img src="img/bg_new2.png" height=20px width=100% style="position: relative; top: 0; left: 0;"/>-->
+    <table width="100%" bgcolor="#f1f1ef" border="0" bordercolor="#c9dea3" rules="none">
+      <tr>
+        <td width="250px"><div id="shape3" style="position: relative; left: 0; top: 0;">
+             <a href="http://www.iitp.ac.in/" target="_blank"><img id="shape4" src="img/nlp logo.png" width=200px height=130px  style="position: absolute; top: 15px;left:25px;"/></a>
+        </div></td>
+        <td width="14px">
+        <td width="960px"><div id="shape3" style="position: relative; left: 0; top: 0;">
+               <!--   <img src="img/bg_new.png" height=200px width=100% style="position: relative; top: 0; left: 0;"/>-->
+              <!--  <img id="shape4" src="img/sanskrit.png" height="150px" width="160px" style="position: absolute; top: 15px; left: 51px;"/>-->
+              <br><br><h1 id="heading-h1" align="center" style="text-shadow: 1px 1px #59767c; font-family:Book Antiqua;"><font color="#fbfcfc">AI-NLP-ML GROUP</font></h1>
+               <br><p id="heading-p" align="center"><a href="http://www.iitp.ac.in/index.php/departments/engineering/computer-science-a-engineering.html" style="text-decoration: none" target="_blank"><font color="#cafafe" style="font-family:Book Antiqua;">Department of Computer Science and Engineering</font></a></p>
+               <br><p id="heading-p" align="center"><a href="http://www.iitp.ac.in/index.php/index.html" style="text-decoration: none" target="_blank"><font color="#F4B45F" style="font-family:Book Antiqua;"><b>Indian Institute of Technology Patna</b></font></a></p> 
+ <!--  <img id="shape4" src="img/ai.jpg" height="150px" width="160px" style="position: absolute; top: 15px; right: 51px;"/>-->
+        </div></td>
+        
+      </tr>
+    </table>
+   
+    </div>
+   
+	<!-- start header -->
+	<header>	
+		<div class="container" >
+				<div class="navbar navbar-static-top" >
+					<div class="navigation" >
+						<nav>
+						<ul class="nav topnav bold">
+							<li class="dropdown">
+							<a href="http://www.iitp.ac.in/~ai-nlp-ml/">Home<i class="icon-angle-down"></i></a>
+							</li>
+							<li class="dropdown">
+							<a href="#">People<i class="icon-angle-down"></i></a>
+							<ul style="display: none;" class="dropdown-menu bold">
+								<li><a href="students.html">Researchers</a>
+								</li>
+								<li><a href="faculty.html">Supervisors</a></li>
+														
+								
+							</ul>
+							</li>
+							<li class="dropdown">
+							<a href="#">Downloads<i class="icon-angle-down"></i></a>
+							<ul class="dropdown-menu bold">
+								<li><a href="cscl-iitp.html">Course Materials</a></li>
+								<li><a href="lectures.html">Lectures</a></li>
+								<li><a href="resources.html">Resources</a></li>
+<li><a href="dissertations.html">Dissertations</a></li>								
+							</ul>
+							</li>
+							<li class="dropdown">
+							<a href="tools.html">Tools<i class="icon-angle-down"></i></a>
+							</li>							
+
+
+							<li class="dropdown">
+							<a href="#">Talks<i class="icon-angle-down"></i></a>
+                                                        <ul class="dropdown-menu bold">
+                                                                <li><a href="nlp-connect.html">NLP Connect Talk Series</a></li>
+								<li><a href="research_talks.html">Research Talks</a></li>
+									
+							</ul>
+							</li>
+							<li class="dropdown active">
+							<a href="#">Events<i class="icon-angle-down"></i></a>
+							<ul class="dropdown-menu bold">
+								<li><a href="cep-dnlp-iitp.html">CEP Courses</a></li>
+								<li><a href="workshops.html">Workshops</a></li>
+								<li><a href="icon2020.html">ICON 2020</a></li>
+																
+							</ul>
+							</li>
+                                                        <li class="dropdown">
+							<a href="#">Publications<i class="icon-angle-down"></i></a>
+							<ul style="display: none;" class="dropdown-menu bold">
+								<li><a href="pubconf.html">Conferences</a></li>
+								<li><a href="pubjour.html">Journals</a></li>
+								<li><a href="pubwork.html">Workshops</a></li>
+								
+								
+							</ul>
+							</li>
+							<li class="dropdown">
+							<a href="gallery.html">Gallery<i class="icon-angle-down"></i></a>
+							</li>
+							<li class="dropdown">
+							<a href="contacts.html">Contact Us<i class="icon-angle-down"></i></a>
+							</li>
+ 
+						</ul>
+						</nav>
+					</div>
+					<!-- end navigation -->
+				</div>
+			</div>
+
+	</header>	
+    <script src="js/jquery.js"></script>
+	<script src="js/custom.js"></script>
+  
+   <!-- ############################################## HEADER ENDS HERE #######################################################-->
+  <!-- ############################################## LEFT COLUMN STARTS HERE ######################################## -->
+    <div class="left-column">
+       
+      <div class="left-column-panel">
+
+        <div class="left-column-panel-middle">
+          <h1><font color="#991e70">Notice Board</font></h1>
+          <h2>Current Notifications</h2>
+          
+      <!-- #################################### NOTICES STARTS HERE ################################################# -->    
+         <div class="sub-menu">
+                <script src="js/jquery-latest.pack.js" type="text/javascript"></script>
+                <script src="js/jcarousellite_1.0.1c4.js" type="text/javascript"></script>
+                <script type="text/javascript">
+                $(function() {
+	            $(".newsticker-jcarousellite").jCarouselLite({
+		          vertical: true,
+		          hoverPause:true,
+		          visible: 5,
+		          auto:500,
+		          speed:2000
+	             });
+                 });
+              </script>
+               <div class="newsticker-jcarousellite">
+			<ul>
+
+
+			<li>		
+		<div class="info">
+<p align="center"  title="GIAN course on 'Deep Learning Techniques for Conversational AI'. The foreign speaker is Dr. Soujanya Poria, Singapore University of Technology Design (SUTD), Singapore from April 13-24, 2022."><a href="workshops.html#gianai2022"><font  color="#311d38">GIAN course on <b>'Deep Learning Techniques for Conversational AI'</b> from <b>April 13-24, 2022</b>.</b></font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in SIGIR 2022) (Core Rank-A*)."><a href="accepted.html#SIGIR2022"><font  color="#311d38">One paper accepted for publication in <b>SIGIR 2022</b> (Core Rank-A*)</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Neurocomputing, Elsevier."><a href="accepted.html#NEURO2022"><font  color="#311d38">One paper accepted for publication in <b></b>Neurocomputing, Elsevier.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Joint Conference on Digital Libraries (JCDL 2022) (Core Rank-A*)."><a href="accepted.html#JCDL2022"><font  color="#311d38">One paper accepted for publication in <b>Joint Conference on Digital Libraries (JCDL 2022)</b> (Core Rank-A*)</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in IEEE Transaction on Affective Computing."><a href="accepted.html#TAFFC_MF2022"><font  color="#311d38">One paper accepted for publication in <b>IEEE Transaction on Affective Computing</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in IEEE Transaction on Computational Social Systems ."><a href="accepted.html#TCSS_KM2022"><font  color="#311d38">One paper accepted for publication in <b>IEEE Transaction on Computational Social Systems </b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Scientific Reports, Nature Publishing Group."><a href="accepted.html#SR2022"><font  color="#311d38">One paper accepted for publication in <b>Scientific Reports, Nature Publishing Group</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Expert System with Applications, Elsevier."><a href="accepted.html#ESA2022"><font  color="#311d38">One paper accepted for publication in <b>Expert System with Applications, Elsevier</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>	
+		<div class="info">							
+<p align="center"  title="One paper accepted for publication in ACM Transaction on Asian and Low-resource Language Information Processing (ACM TALLIP)."><a href="accepted.html#TALLIP2022"><font  color="#311d38">One paper accepted for publication in <b>ACM Transaction on Asian and Low-resource Language Information Processing (ACM TALLIP)</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Computational Linguistics journal (Core Rank A*) by MIT Press."><a href="accepted.html#CL2021"><font  color="#311d38">One paper accepted for publication in <b>Computational Linguistics journal (Core Rank A*) by MIT Press</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>	
+		<div class="info">							
+<p align="center"  title="One paper accepted for publication in PLOS ONE (h5 index: 185, Impact Factor: 3.24)."><a href="accepted.html#PLOSONE2021"><font  color="#311d38">One paper accepted for publication in <b>PLOS ONE (h5 index: 185, Impact Factor: 3.24)</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>		
+		<div class="info">
+<p align="center"  title="Four papers accepted for publication in ECIR 2022 (core ranking A)."><a href="accepted.html#ECIR2022"><font  color="#311d38">Four papers accepted for publication in <b>ECIR 2022 (core ranking A)</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="A paper from our group got the best paper runner-up award in ICADL 2021. P. Bharti, S. Ranjan, Tirthankar Ghosal, M. Agrarwal, Asif Ekbal (2021). PEERAssist: Leveraging on Paper-Review Interactions To Predict Peer Review Decisions"><a href="notices.html"><font  color="#311d38">A paper from our group got the best paper runner-up award in <b>ICADL 2021</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>	
+		<div class="info">							
+<p align="center"  title="One paper accepted for publication in IEEE Transactions on Affective Computing (impact factor 10.506)."><a href="accepted.html#TAFFC2021"><font  color="#311d38">One paper accepted for publication in <b>IEEE Transactions on Affective Computing (impact factor 10.506).</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>
+		<div class="info">								
+<p align="center"  title="One paper accepted for publication in Machine Translation Journal, Springer."><a href="accepted.html#MT2021"><font  color="#311d38">One paper accepted for publication in <b>Machine Translation Journal, Springer </b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>	
+		<div class="info">															
+<p align="center"  title="One paper accepted for publication in Scientific Reports."><a href="accepted.html#SR2021"><font  color="#311d38">One paper accepted for publication in <b>Scientific Reports</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="Our faculty members, Dr. Asif Ekbal and Dr. Sriparna Saha are listed in the list of the top 2% of scientists in the world published by Stanford University, Elsevier. Some media reports on this are attached herewith."><a href="notices.html"><font  color="#311d38">Our faculty members, <b>Dr. Asif Ekbal</b> and <b>Dr. Sriparna Saha</b> are listed in the list of the <b>top 2% of scientists in the world</b> published by <b>Stanford University, Elsevier</b>. Some media reports on this are attached herewith.</b>.</p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+						<li>		
+		<div class="info">
+<p align="center"  title="Sandeep Kumar, PhD Scholar, receives the prestigious Prime Minister's Research Fellowship (PMRF) Award for his Doctoral Studies"><a href="notices.html"><font  color="#311d38"><b>Sandeep Kumar</b>, PhD Scholar, receives the prestigious <b>Prime Minister's Research Fellowship (PMRF)</b> Award for his Doctoral Studies</b>.</p>		
+		</div>
+				<div class="clear"></div>
+			</li>			
+
+						<li>		
+		<div class="info">
+<p align="center"  title="Dr. Sriparna Saha is invited to join the  Editorial Board of Engineering Applications of Artificial Intelligence (EAAI), Elsevier journal (impact factor: 6.2)."><a href="notices.html"><font  color="#311d38"><b>Dr. Sriparna Saha</b> is invited to join the  <b>Editorial Board of Engineering Applications of Artificial Intelligence (EAAI), Elsevier journal (impact factor: 6.2).</b></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+						<li>		
+		<div class="info">
+<p align="center"  title="Mr. Abhisek Tiwari is selected for the prestigious Prime Minister's Research Fellowship (PMRF). Abhishek is jointly guided by Dr. Sriparna Saha and Prof. Pushpak Bhattacharyya.
+
+The PMRF scholar gets Rs. 70,000 per month for the first two years and then an increased scholarship third year onwards. Apart from this, each scholar would be eligible for a research grant of Rs. 2 Lakhs per year.."><a href="notices.html"><font  color="#311d38"><b>Mr. Abhisek Tiwari</b> is selected for the prestigious <b>Prime Minister's Research Fellowship (PMRF)</b>.</p>		
+		</div>
+				<div class="clear"></div>
+			</li>			
+
+			<li>		
+		<div class="info">
+<p align="center"  title="Six papers accepted for publication in 8th International Conference on Neural Information Processing (ICONIP-2021)."><a href="accepted.html#ICONIP2021"><font  color="#311d38">Six papers accepted for publication in <b>8th International Conference on Neural Information Processing (ICONIP-2021)</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in IEEE Symposium Series on Computational Intelligence."><a href="accepted.html#SSCI2021"><font  color="#311d38">One paper accepted for publication in <b>IEEE Symposium Series on Computational Intelligence</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in IEEE Access(h5-index: 164)."><a href="accepted.html#IEEEAccess2021"><font  color="#311d38">One paper accepted for publication in <b>IEEE Access</b> (h5-index: 164).</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Multimedia Tools and Applications (impact factor: 2.757)."><a href="accepted.html#MTA22021"><font  color="#311d38">One paper accepted for publication in <b> Multimedia Tools and Applications </b>(impact factor: 2.757).</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>	
+
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in  IEEE/ACM Transactions on Computational Biology and Bioinformatics."><a href="accepted.html#TCBB2021"><font  color="#311d38">One paper accepted for publication in <b>IEEE/ACM Transactions on Computational Biology and Bioinformatics</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in ACM Transactions on Asian and Low-Resource Language Information Processing."><a href="accepted.html#TALLIP2021"><font  color="#311d38">One paper accepted for publication in <b>ACM Transactions on Asian and Low-Resource Language Information Processing</b></font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+						
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in IEEE Transactions on Computational Social Systems."><a href="accepted.html#TCSS2021"><font  color="#311d38">One paper accepted for publication in <b>IEEE Transactions on Computational Social Systems</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in ACM Transactions on Information Systems (impact factor: 2.312)."><a href="accepted.html#ACMTIS2021"><font  color="#311d38">One paper accepted for publication in <b> ACM Transactions on Information Systems</b> (impact factor: 2.312).</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>	
+
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Expert Systems with Applications journal (impact factor: 6.954) (accepted)."><a href="accepted.html#TCBB2021"><font  color="#311d38">One paper accepted for publication in <b>Expert Systems with Applications journal</b> (impact factor: 6.954) (accepted).</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Multimedia Tools and Applications (impact factor: 2.313) (accepted)."><a href="accepted.html#MTA12021"><font  color="#311d38">One paper accepted for publication in <b>Multimedia Tools and Applications</b> (impact factor: 2.313) (accepted).</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>			
+												
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Information Processing and Management (IPM)."><a href="accepted.html#IPM2022"><font  color="#311d38">One paper accepted for publication in <b> Information Processing and Management (IPM)</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in IEEE Transactions on Computational Social Systems (accepted)."><a href="accepted.html#IEEETCSS2021"><font  color="#311d38">One paper accepted for publication in <b> IEEE Transactions on Computational Social Systems</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>			
+						<li>		
+		<div class="info">
+<p align="center"  title="1. Towards Developing a Multilingual and Code-Mixed Visual Question Answering System by Knowledge Distillation, EMNLP 2021 (Findings)
+2. Three papers accepted in The 23rd International Conference on Asia-Pacific Digital Libraries (ICADL 2021)
+a. ContriSci: A BERT-based Multitasking Deep Neural Architecture to Identify Contribution Statements from Research Papers
+b. PEERAssist: Leveraging on Paper-Review Interactions To Predict Peer Review Decisions
+c. DataQuest: An Approach To Automatically Extract Dataset Mentions From Scientific Papers
+3. What the fake? Probing Misinformation Detection Standing on the Shoulder of Novelty and Emotion, In Information Processing and Management, Elsevier"><a href="notices.html"><font  color="#311d38"><b>Recently accepted papers from the AI-NLP-ML Group</b>.</p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="Blog on code-mixing by Arindam Chatterjee, PhD scholar of AI-NLP-ML group (an initiative of IIT Patna-Wipro Collaboration)"><a href="https://wiprotechblogs.medium.com/a-tale-of-two-languages-the-code-switch-mix-story-d88e105b07f4"><font  color="#311d38">Blog on code-mixing by Arindam Chatterjee, PhD scholar of AI-NLP-ML group (an initiative of IIT Patna-Wipro Collaboration)</b>.</p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+						<li>		
+		<div class="info">
+<p align="center"  title="ADVERTISEMENT NO:R&D/242-352-461-474-508/199  DATED : 23.07.2021; Name of the Posts : Junior Research Fellow, Senior Research Fellow, Lexicographer, Research Associate; Project Title & Funding Agency : Research on “AI-NLP-ML”, funded by various industries and govt. bodies (Govt bodies: Meity, SERB, MHA; Industries: Wipro, Flipkart, Accenture)."><a href="notices.html"><font  color="#311d38">ADVERTISEMENT: <b>Junior Research Fellow, Senior Research Fellow, Lexicographer, Research Associate</b>.</p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+						<li>		
+		<div class="info">
+<p align="center"  title="Dr. Sriparna Saha has joined  PLOS ONE (h5-index: 175) Editorial Board as an Academic Editor."><a href="notices.html"><font  color="#311d38"><b>Dr. Sriparna Saha</b> has joined <b>PLOS ONE</b> (h5-index: 175) <b>Editorial Board</b> as an <b>Academic Editor</b>.</p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>		
+		<div class="info">
+<p align="center"  title="Two papers accepted for publication in IEEE/ACM Transactions on Computational Biology and Bioinformatics (impact factor: 2.428) (accepted)."><a href="accepted.html#TCBB2021"><font  color="#311d38">Two papers accepted for publication in <b> IEEE/ACM Transactions on Computational Biology and Bioinformatics </b>(impact factor: 2.428).</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>		
+		<div class="info">
+<p align="center"  title="Two papers accepted for publication in IEEE Transactions on Computational Social Systems (accepted)."><a href="accepted.html#TCSS2021"><font  color="#311d38">Two papers accepted for publication in <b> IEEE Transactions on Computational Social Systems. </b></font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in European Physical Journal Special Topics (impact factor: 1.668) (accepted)."><a href="accepted.html#EPJST2021"><font  color="#311d38">One paper accepted for publication in <b> European Physical Journal Special Topics </b> (impact factor: 1.668) (accepted).</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in  IEEE Transactions on Emerging Topics in Computational Intelligence (impact factor: 4.62) (accepted)"><a href="accepted.html#TETCI2021"><font color="#311d38">One paper accepted for publication in <b>  IEEE Transactions on Emerging Topics in Computational Intelligence</b> (impact factor: 4.62) (accepted)</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>			
+			
+<li>		
+		<div class="info">
+<p align="center"  title="Dr. Sriparna Saha has been appointed as Associate Editors of  IEEE/ACM Transactions on Computational Biology and Bioinformatics (impact factor: 3.015), Expert Systems with Applications (impact factor: 5.452, h5-index: 111), IEEE Internet Computing (impact factor is 4.231 - 2-year Impact Factor = 5.277 - H-index = 103)"><a href="notices.html"><font  color="#311d38"><b>Dr. Sriparna Saha</b> has been appointed as <b>Associate Editors</b> of <b>IEEE/ACM Transactions on Computational Biology and Bioinformatics (impact factor: 3.015), Expert Systems with Applications (impact factor: 5.452, h5-index: 111), IEEE Internet Computing (impact factor is 4.231 - 2-year Impact Factor = 5.277 - H-index = 103)</b>.</p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="Prof. Pushpak Bhattacharyya and Dr. Asif Ekbal has been featured in the latest CS Rankings"><a href="notices.html"><font  color="#311d38"><b>Prof. Pushpak Bhattacharyya</b> and <b> Dr. Asif Ekbal </b>has been featured in the latest <b>CS Rankings</b>.</p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>		
+		<div class="info">
+<p align="center"  title="Two papers accepted for publication in Joint Conference on Digital Libraries (JCDL 2021) (Core Rank-A*)."><a href="accepted.html#JCDL2021"><font  color="#311d38">Two papers accepted for publication in <b>Joint Conference on Digital Libraries (JCDL 2021)</b> (Core Rank-A*)</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Information Processing and Management (IPM), Elsevier (IF-4.784, Core-A)."><a href="accepted.html#IPM2021"><font  color="#311d38">One paper accepted for publication in <b>Information Processing and Management (IPM), Elsevier</b> (IF-4.784, Core-A)</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>			
+						
+			<li>		
+		<div class="info">
+<p align="center"  title="Professor Pushpak Bhattacharyya (CSE) has been recently inducted as one of the Editorial Board members of “Journal of Natural Language Engineering, JNLE”, published by Cambridge University Press.
+"><a href="notices.html"><font  color="#311d38"><b>Prof. Pushpak Bhattacharyya</b> has been inducted as one of the Editorial Board members of <b>"JNLE"</b>, published by Cambridge University Press.</p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in ACM Transactions on Asian and Low-Resource Language Information Processing (accepted)."><a href="accepted.html#TALLIP2021"><font  color="#311d38">One paper accepted for publication in <b>ACM Transactions on Asian and Low-Resource Language Information Processing</b> (accepted).</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Applied Intelligence (impact factor: 3.325) (accepted)."><a href="accepted.html#AI2021"><font  color="#311d38">One paper accepted for publication in <b>Applied Intelligence</b> (impact factor: 3.325) (accepted).</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Plos One (h5 index: 175, impact factor: 2.74) (accepted)."><a href="accepted.html#PLOSONE2021"><font  color="#311d38">One paper accepted for publication in <b>Plos One</b> (h5 index: 175, impact factor: 2.74) (accepted)</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in IEEE Transactions on Computational Social Systems (accepted)."><a href="accepted.html#IEEETCSS2021"><font  color="#311d38">One paper accepted for publication in <b>IEEE Transactions on Computational Social Systems</b> (accepted).</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="Two papers accepted for publication in Knowledge-Based Systems (impact factor: 5.921) (accepted)."><a href="accepted.html#KBS2021"><font  color="#311d38">Two papers accepted for publication in <b>Knowledge-Based Systems</b> (impact factor: 5.921) (accepted).</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Pattern Recognition Letters (impact factor: 3.255) (accepted)."><a href="accepted.html#PRL2021"><font  color="#311d38">One paper accepted for publication in <b>Pattern Recognition Letters</b> (impact factor: 3.255) (accepted).</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Wiley Transactions on Emerging Telecommunications Technologies (impact factor: 1.594)(accepted)."><a href="accepted.html#TETT2021"><font  color="#311d38">One paper accepted for publication in <b>Wiley Transactions on Emerging Telecommunications Technologies</b> (impact factor: 1.594)(accepted).</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+<li>		
+		<div class="info">
+<p align="center"  title="list of leading women AI researchers of India declared on the women's day 8th March:"><a href="notices.html"><font  color="#311d38"><b>Dr. Sriparna Saha</b> has been listed among the <b><a href='https://indiaai.gov.in/article/women-s-day-special-meet-india-s-leading-ai-researchers?fbclid=IwAR2A8ZLlET3amBM8v9D6sTKeI4k9CaKwZM2jDBFyup7mf0ydJKeGadqCBqs'>leading women AI researchers of India</a></b></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Cognitive Computation."><a href="accepted.html#CC2021"><font  color="#311d38">One paper accepted for publication in <b>Cognitive Computation</b> (impact factor: 4.307)</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in ACM Transactions on Knowledge Discovery from Data (Impact Score: 5.78)."><a href="accepted.html#TKDD"><font  color="#311d38">One paper accepted for publication in <b>ACM Transactions on Knowledge Discovery from Data</b> (Impact Score: 5.78)</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Applied Intelligence."><a href="accepted.html#AI2020"><font  color="#311d38">One paper accepted for publication in <b>Applied Intelligence</b> (impact factor: 3.325, h5-index: 42)</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+<p align="center"  title="Prof. Pushpak Bhattacharyya has been listed among the Top AI Researchers in India in 2020 by Analytics India Magazine."><a href="notices.html"><font  color="#311d38"><b>Prof. Pushpak Bhattacharyya</b> has been listed among the <b>Top AI Researchers in India.</b></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+						
+<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in AAAI 2020."><a href="accepted.html#AAAI2020"><font  color="#311d38">One paper accepted for publication in <b>AAAI 2020</b></font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			
+<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Cognitive Computation, Springer."><a href="accepted.html#COGN2020"><font  color="#311d38">One paper accepted for publication in <b>Cognitive Computation, Springer</b></font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>			
+
+<li>		
+		<div class="info">
+<p align="center"  title="Dr. Sriparna Saha has been listed in the world's top 2% scientists list  in the field of Artificial Intelligence and Image Processing."><a href="notices.html"><font  color="#311d38"><b>Dr. Sriparna Saha</b> has been listed in the <b>"world's top 2% scientists list"</b>  in the field of <b>"Artificial Intelligence and Image Processing"</b>.
+
+One can refer to Table 7 of the paper <a href='https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000918.'><font color=blue>https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000918</b></font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+<li>		
+		<div class="info">
+<p align="center"  title="One papers accepted for publication in ACM Transactions on Asian and Low-Resource Language Information Processing."><a href="accepted.html#TALLIP2020"><font  color="#311d38">One paper accepted for publication in <b>ACM Transactions on Asian and Low-Resource Language Information Processing</b></font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+<p align="center"  title="One papers accepted for publication in Applied Soft Computing."><a href="accepted.html#ASC2020"><font  color="#311d38">One paper accepted for publication in <b>Applied Soft Computing</b></font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+<p align="center"  title="Kshitij Mishra has been awarded with the very prestigious Prime Ministers Research Fellowship (PMRF) Award for his doctoral studies."><a href="notices.html"><font  color="#311d38">Kshitij Mishra</b> has been awarded with the very prestigious <b>Prime Ministers Research Fellowship (PMRF) Award for his doctoral studies.</b></font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+<li>		
+		<div class="info">
+<p align="center"  title="IIIT Bhagalpur-IIT Patna team (IIITBH-IITP)"><a href="notices.html"><font  color="#311d38"><b>IIITBH-IITP team</b> has obtained the best performance on community summaries of the <b>CL-SciSumm 2020 task.</b></b></font></a></p>
+		</div>
+				<div class="clear"></div>
+			</li>
+
+
+<li>		
+		<div class="info">
+<p align="center"  title="One papers accepted for publication in Nature Scientific Report."><a href="accepted.html#NSR2020"><font  color="#311d38">One paper accepted for publication in <b>Nature Scientific Report</b></font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+<li>		
+		<div class="info">
+<p align="center"  title="Two papers accepted for publication in Expert Systems with Applications"><a href="accepted.html#ESA2020"><font  color="#311d38">Two papers accepted for publication in <b>Expert Systems with Applications</b></font></a></p>
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Multimedia Systems"><a href="accepted.html#MS2020"><font  color="#311d38">One paper accepted for publication in <b>Multimedia Systems</b></font></a></p>
+		</div>
+				<div class="clear"></div>
+			</li>			
+			
+<li>		
+		<div class="info">
+<p align="center"  title="Two papers accepted for publication in  COLING 2020."><a href="accepted.html#COLING2020"><font  color="#311d38">Two papers accepted for publication in <b> COLING 2020 </b></font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in EMNLP Findings (2020)"><a href="accepted.html#EMNLPF2020"><font  color="#311d38">One paper accepted for publication in <b>EMNLP Findings (2020)</b></font></a></p>
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+<li>		
+		<div class="info">
+<p align="center"  title="Three papers accepted for publication in AACL-IJCNLP 2020."><a href="accepted.html#AACL-IJCNLP2020"><font  color="#311d38">Three papers accepted for publication in <b> AACL-IJCNLP 2020 </b></font></a></p>
+		</div>
+				<div class="clear"></div>
+			</li>						
+
+<li>		
+		<div class="info">
+<p align="center"  title="Two papers accepted for publication in ICONIP 2020"><a href="accepted.html#ICONIP2020"><font  color="#311d38">Two papers accepted for publication in <b>ICONIP 2020</b></font></a></p>
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Knowledge Based System, Elsevier."><a href="accepted.html#KBS2020"><font  color="#311d38">One paper accepted for publication in <b> Knowledge Based System, Elsevier</b></font></a></p>
+		</div>
+				<div class="clear"></div>
+			</li>			
+
+<li>		
+		<div class="info">
+		<p align="center"  title="One paper accepted for publication in Computers & Electrical Engineering (impact factor: 2.663) journal. "><a href="accepted.html#CEE2020"><font color="black" >One paper accepted for publication in Computers & Electrical Engineering (impact factor: 2.663) journal.</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+		<p align="center"  title="One paper accepted for publication in IEEE Journal of Biomedical and Health Informatics (impact factor 5.180)"><a href="accepted.html#BHI2020"><font color="black" >One paper accepted for publication in IEEE Journal of Biomedical and Health Informatics.</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center"  title="Four papers accepted for publication in ICONIP 2020."><a href="accepted.html#ICONIP2020"><font color="black" >Four papers accepted for publication in ICONIP 2020 (Category A)</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center"  title="One paper accepted for publication in Cognitive Computation."><a href="accepted.html#COGN2020"><font color="black" >One paper accepted for publication in Cognitive Computation</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+		<p align="center"  title="One paper accepted for publication in IEEE Transaction on Affective Computing."><a href="accepted.html#TAFFC2020"><font color="black" >One paper accepted for publication in IEEE Transaction on Affective Computing</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+<li>		
+		<div class="info">
+		<p align="center"  title="Asif Ekbal will serve in IJCAI 2020 as its Senior Program Committee Member."><font color="black" >Asif Ekbal will serve in IJCAI 2020 as its Senior Program Committee Member.</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+<li>		
+		<div class="info">
+		<p align="center"  title="Asif Ekbal will serve in the Program Committee of AAAI 2020."><font color="black" >Asif Ekbal will serve in the Program Committee of AAAI 2020.</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>			
+
+<li>		
+		<div class="info">
+			<p align="center"  title="AI-NLP-ML Research Group signed a MOU with Flipkart."><a href="notices.html"><font  color="#311d38">AI-NLP-ML Research Group, IIT Patna is pleased to announce an MoU with Flipkart.</a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center"  title="One paper accepted for publication in Computers in Biology and Medicine."><a href="accepted.html#CBM2020"><font color="black" >One paper accepted for publication in Computers in Biology and Medicine.</font></a></p>
+				
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center"  title="One paper accepted for publication in Swarm and Evolutionary Computation."><a href="accepted.html#SEC2020"><font color="black" >One paper accepted for publication in Swarm and Evolutionary Computation</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center"  title="One paper accepted for publication in IEEE/ACM Transactions on Computational Biology and Bioinformatics."><a href="accepted.html#TCBB2020"><font color="black" >One paper accepted for publication in IEEE/ACM Transactions on Computational Biology and Bioinformatics.</font></a></p>
+				
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center"  title="Two projects."><a href="accepted.html#TCSS2020"><font color="black" >One paper accepted for publication in IEEE Transactions on Computational Social Systems.</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+<li>		
+		<div class="info">
+		<p align="center" title="One paper accepted for publication in Neurocomputing."><a href="accepted.html#NC"><font color="black" >One paper accepted for publication in Neurocomputing. </font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+<li>		
+		<div class="info">
+		<p align="center" title="Two projects."><a href="cproject.html#2Proj"><font color="black" >AI-NLP-ML research group of IIT Patna have undertaken two sponsored projects.</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center" title="One paper accepted for publication in EAMT 2020."><a href="accepted.html#EAMT"><font color="black" >One paper accepted for publication in EAMT 2020.</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center" title="One paper accepted for publication in Scientific Report."><a href="accepted.html#SR2020"><font color="black" >One paper accepted for publication in Scientific Report (h5 index 178, impact factor: 4.120) (accepted). </font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center" title="Asif Ekbal has taken up the responsibility of Associate Editor, SN Computer Science, Springer"><font color="black" >Asif Ekbal has taken up the responsibility of Associate Editor, SN Computer Science, Springer.</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center" title="Asif Ekbal will serve as the Area Chair of Resources and Evaluation track of EACL 2021."><font color="black" >Asif Ekbal will serve as the Area Chair of Resources and Evaluation track of EACL 2021.</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+<li>		
+		<div class="info">
+		<p align="center" title="Three papers accepted for publication in IEEE International Conference on Pattern Recognition."><a href="accepted.html#ICPR"><font color="black" >Three papers accepted for publication in IEEE International Conference on Pattern Recognition.</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>			
+
+<li>		
+		<div class="info">
+		<p align="center" title="Three papers accepted for publication in IEEE International Conference on Pattern Recognition."><a href="accepted.html#ICPR"><font color="black" >Three papers accepted for publication in IEEE International Conference on Pattern Recognition.</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center" title="One paper accepted for publication in Multimedia Tools and Applications (impact factor: 2.101)."><a href="accepted.html#MTA2020"><font color="black" >One paper accepted for publication in Multimedia Tools and Applications (impact factor: 2.101).</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center" title="One paper accepted for publication in PLOS ONE."><a href="accepted.html#PLOSONE"><font color="black" >One paper accepted for publication in PLOS ONE (h5 index: 176, impact factor: 2.776)  </font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center" title="One paper accepted for publication in Expert Systems with Applications 2020."><a href="accepted.html#ESA2020"><font color="black" >One paper accepted for publication in Expert Systems with Applications 2020.</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center" title="One paper accepted for publication in Soft Computing journal, 2020."><a href="accepted.html#SOFTCOMP2020"><font color="black" >One paper accepted for publication in Soft Computing journal, 2020 </font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center" title="One paper accepted for publication in ACM Transactions on Knowledge Discovery and Data (TKDD)."><a href="accepted.html#TKDD"><font color="black" >One paper accepted for publication in ACM Transactions on Knowledge Discovery and Data (TKDD). </font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center" title="One paper accepted for publication in IEEE Computational Intelligence Magazine (CIM)."><a href="accepted.html#CIM"><font color="black" >One paper accepted for publication in IEEE Computational Intelligence Magazine (CIM). </font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+
+
+<li>		
+		<div class="info">
+		<p align="center" title="One paper accepted for publication in Multimedia Tools and Applications, 2020 ."><a href="accepted.html#MTA2020"><font color="black" >One paper accepted for publication in Multimedia Tools and Applications, 2020.</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center" title="Three papers accepted for publication in IEEE-CEC, 2020 (h5 INDEX: 66)."><a href="accepted.html#IEEECEC2020"><font color="black" >Three papers accepted for publication in IEEE-CEC, 2020 (h5 INDEX: 66).</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center" title="One paper accepted for publication in ECIR, 2020 (Core Ranking: A)."><a href="accepted.html#ECIR2019"><font color="black" >One paper accepted for publication in ECIR, 2020 (Core Ranking: A).</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center" title="One paper accepted for publication in Cognitive Computation Journal 2020."><a href="accepted.html#CC22020"><font color="black" >One paper accepted for publication in Cognitive Computation Journal 2020.</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center" title="One paper accepted for publication in IEEE Transactions on Affective Computing, 2020 (Impact Factor: 6.288)."><a href="accepted.html#IEEEAFFECT2020"><font color="black" >One paper accepted for publication in IEEE Transactions on Affective Computing, 2020 (Impact Factor: 7.512).</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center" title="One paper accepted for publication in Expert Systems with Applications (Impact Factor: 4.292)."><a href="accepted.html#ES2020"><font color="black" >One paper accepted for publication in Expert Systems with Applications (Impact Factor: 4.292).</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+
+       </ul>
+    </div>
+    <!-- ###################################### NOTICES ENDS HERE######################################## -->
+          
+          </div>
+          
+          
+        </div>
+        <div class="left-column-panel-bottom"><p class="right" align="right"><a href="notices.html">View All &raquo;</a></p></div>
+      </div>
+        <div class="left-column-panel">
+      <!--  <div class="left-column-panel-top"></div>-->
+        <div class="left-column-panel-middle">
+  
+          
+          <h1><font color="#991e70">Research and Development</font></h1><br>
+          
+          
+          
+          <div class="sub-menu">
+           <h2 align="center"><a style="text-decoration: none" href="collaboration.html" ><font  color="black">Collaboration</font></a></h2>
+         <a href="collaboration.html" ><img id="shape4" src="img/coll.jpg" width=220px height=150px alt=""></a> 
+         <!-- Image taken from https://pixabay.com/ -->      
+          </div>
+         <br> 
+	 <div class="sub-menu">
+	<h2><a style="text-decoration: none" href="cproject.html" ><font  color="black">Current Projects</font></a></h2>
+         
+         <a href="cproject.html" ><img id="shape4" src="img/project.jpg" width=220px height=150px alt=""></a>   
+         <!-- Image taken from https://pixabay.com/ -->      
+          </div>
+          
+        </div>
+       <!-- <div class="left-column-panel-bottom"></div>-->
+      </div>
+    </div>
+
+    <!-- ##################################### LEFT COLUMN ENDS HERE ############################################### -->
+<div class="right-column">
+         <!-- ####### SEARCH CODE STARTS HERE ####### -->
+	<table align="right">
+	<tbody>
+	<tr>
+	<td>
+		<gcse:search></gcse:search>
+	</td>
+	</tr>
+	</tbody>
+	</table>    
+	
+    <!-- ####### SEARCH CODE ENDS HERE ####### --><br><br>
+     <div class="right-column-heading">
+        <h1><font color="#991e70"><b>Recent Courses</b></font>
+<!--        <img alt="new" src="images/new-logo1.gif" width="50" height="30">-->
+        </h1>      
+     </div>
+<br	>
+  <div class="right-column-content noborder">
+            <div class="right-column-heading"  id="gianai2022" name="gianai2022">
+              <h2 align="justify">GIAN course on <b>"Deep Learning Techniques for Conversational AI"</b>, April 13-24, 2022.</h2>
+          </div>
+         <h2><font color="black">Course Overview</font></h2><br/>
+        <p align="justify">Thanks to the increasing rise of interest in chatbot from the industry,
+conversational AI (Artificial Intelligence) is a new hot research field in Natural
+Language Processing (NLP), Machine Learning and Deep Learning. The main
+goal of conversational AI is to generate a human-like conversation. However, it
+is a challenging task due to the complex nature of human conversations,
+co-reference, etc. Conversations are broadly categorized into two classes:
+task-oriented and chit-chat (also called as non-task oriented). Both kinds of
+conversations are governed by different factors or pragmatics, such as topic,
+interlocutors’ personality, argumentation logic, viewpoint, intent, and so on. It
+is thus extremely important to properly model all these factors for effective
+conversational analysis. In this very emerging and advanced course, we will
+discuss the modern technologies of deep learning and word representations
+such as BERT, GPT-2, Seq2seq, Transformer for conversation analysis and
+generation. We will also take a step ahead from generation to classification by
+shedding light on the emotion recognition in conversation, emotion-oriented
+dialogue generation, conversational question-answering (QA), intent
+classification etc. This course will help students, faculty members, researchers
+and practitioners to understand both the basic and advanced techniques of
+conversational AI.
+        </p>
+        
+<p><b>Foreign speaker:<br></b> <a href="https://sporia.info/" style="text-decoration:none" target="_blank"><font color="blue"><i>Dr. Soujanya Poria</a></font><font color="black">, Singapore University of Technology Design (SUTD), Singapore</i></font></p>        
+
+<p><b>Indian speaker:<br></b> <a href="http://www.iitp.ac.in/~asif/" style="text-decoration:none" target="_blank"><font color="blue"><i>Dr. Asif Ekbal</a></font><font color="black">, Indian Institute of Technology Patna, India</i></font></p>        
+
+<p><font align="justify"><b>Target groups:<br></b></font><font color="black"> <i>Executives, engineers and researchers from service and government organizations including R&D institutions. Students at all levels (BTech / MSc / MTech / PhD) or Faculty from reputed academic institutions and technical institutions. </i></p>
+
+<p><font align="justify"><b>Duration:</b><br></font><font color="black"> <i>April 13-24, 2022</i></p>
+
+<br>
+
+<table width="100%" border="0">
+ <tr><td width="50%"><p style=" display: list-item;  margin-left: 1.3em;  list-style-type: circle; " align="justify"> <a href="resources/workshops/GIAN_Workshop_Brochure-Front-April2022.pdf" style="text-decoration:none" target="_blank"><font color="blue"><b>Download Brochure</b></font></a></p></td>
+<!--<td width="50%"><p style=" display: list-item;  margin-left: 1.3em;  list-style-type: circle; " align="justify"> <a href="http://www.gian.iitkgp.ac.in/GREGN/index" style="text-decoration:none"><font color="blue	"><b>Click here for Registration</b></font></a></p> </td>-->
+</tr>
+</table>    
+
+<!--
+<br>
+        <h2><font color="black">Second Call for Participation:  Short-term Course on Deep Learning for NLP
+</font></h2><br/>
+        <p align="justify">The AI-NLP-ML Research Group (<a href="http://www.iitp.ac.in/~ai-nlp-ml/"> <font color="black">http://www.iitp.ac.in/~ai-nlp-ml/</a></font>), Department of Computer Science and Engineering, Indian Institute of Technology Patna (IIT Patna)  announces the short-term course on "Deep Learning for Natural Language Processing" under the Continuing Education Program (CEP).        </p>
+
+<p>In this course, through lectures, tutorials, assignments and laboratories, participants will be taught to acquire the necessary skills to understand, design and implement various state-of-the-art deep learning techniques for solving different NLP problems (e.g. Machine Translation, Sentiment Analysis, Summarization, Natural Language Generation, Multimiodal information Processing, Question-Answering etc.).  </p>
+
+<p><font color="black">Course Title:</font> Deep Learning for Natural Language Processing</p>
+<p><font color="black">Target groups:</font> Undergraduates, Postgraduates, PhDs, Faculty members, Researchers, Industry personnel </p>
+
+<p><font color="black">Duration:</font> January 10-23, 2020</p>
+<p><font color="black">Venue:</font> IIT Patna, India</p>
+
+<p><b>Last date for registration:</b> January 07, 2020 <i>(We are also allowing on-spot registration)</i></p>-->
+
+       </div> 
+
+
+     <div class="right-column-heading">
+        <h1><font color="#991e70"><b>Previous Workshops</b></font></h1>      
+     </div>
+<br	>
+       <div class="right-column-content noborder">
+          <div class="right-column-heading" id="CEPDLNLP2019" name="CEPDLNLP2019">
+              <h2 align="justify">CEP course on Deep Learning for Natural Language Processing, Jan 10-23, 2020.</h2>
+          </div>
+         <h2><font color="black">Course Overview</font></h2><br/>
+         <p align="justify">This course will cover various fundamental concepts of NLP, recent research directions and hads-on on various machine learning and deep learning approaches to NLP. Following topics in NLP will be discussed in details: N-gram models, Word sense disambiguation, Parsing, Part-of-speech tagging, Sentiment Analysis, Machine Translation, Question Answering, Natural Language Understanding, Natural Language Generation etc. The course will also cover a number of standard algorithms that are used throughout language processing. Modern NLP algorithms are grounded in machine learning. In recent years, Deep Learning approaches have been showing very impressive performance across many different NLP tasks, using single end-to-end neural models that do not require traditional, task-specific feature engineering. In this course, participants will gain a thorough introduction to cutting-edge research in NLP. Through lectures, tutorials, assignments and laboratories, participants will learn the necessary skills to design, implement, and understand their own machine learning models for solving a NLP problem.
+         </p>    
+      </div> 
+
+<!--     <div class="right-column-heading" id="CEPDLNLP2019" name="CEPDLNLP2019">-->
+<!--      -->
+<!--        <h1><font color="#991e70">Recent Courses</font></h1>-->
+<!--        <h2 align="justify">CEP course on Deep Learning for Natural Language Processing, Jan 10-23, 2020.</h2>-->
+<!--      </div>-->
+<!--   <div class="right-column-content noborder">-->
+<!--        <h1></h1>-->
+<!--        <h2><font color="black">Course Overview</font></h2><br/>-->
+<!--        <p align="justify">This course will cover various fundamental concepts of NLP, recent research directions and hads-on on various machine learning and deep learning approaches to NLP. Following topics in NLP will be discussed in details: N-gram models, Word sense disambiguation, Parsing, Part-of-speech tagging, Sentiment Analysis, Machine Translation, Question Answering, Natural Language Understanding, Natural Language Generation etc. The course will also cover a number of standard algorithms that are used throughout language processing. Modern NLP algorithms are grounded in machine learning. In recent years, Deep Learning approaches have been showing very impressive performance across many different NLP tasks, using single end-to-end neural models that do not require traditional, task-specific feature engineering. In this course, participants will gain a thorough introduction to cutting-edge research in NLP. Through lectures, tutorials, assignments and laboratories, participants will learn the necessary skills to design, implement, and understand their own machine learning models for solving a NLP problem.-->
+<!--        </p>-->
+<!--<table width="100%" border="0">-->
+<!-- <tr><td width="50%"><p style=" display: list-item;  margin-left: 1.3em;  list-style-type: circle; " align="justify"> <a href="resources/workshops/CEP-NLP-DL.pdf" style="text-decoration:none" target="_blank"><font color="black">Download <b>Brochure & Registration form</b></font></a></p></td>-->
+<!--<td width="50%"><p style=" display: list-item;  margin-left: 1.3em;  list-style-type: circle; " align="justify"> <a href="http://www.iitp.ac.in/~ai-nlp-ml/cep-dnlp-iitp.html" style="text-decoration:none"><font color="black"><b>Course Page</b></font></a></p> </td></tr>-->
+<!--</table>    -->
+
+<!--
+<br>
+        <h2><font color="black">Second Call for Participation:  Short-term Course on Deep Learning for NLP
+</font></h2><br/>
+        <p align="justify">The AI-NLP-ML Research Group (<a href="http://www.iitp.ac.in/~ai-nlp-ml/"> <font color="black">http://www.iitp.ac.in/~ai-nlp-ml/</a></font>), Department of Computer Science and Engineering, Indian Institute of Technology Patna (IIT Patna)  announces the short-term course on "Deep Learning for Natural Language Processing" under the Continuing Education Program (CEP).        </p>
+
+<p>In this course, through lectures, tutorials, assignments and laboratories, participants will be taught to acquire the necessary skills to understand, design and implement various state-of-the-art deep learning techniques for solving different NLP problems (e.g. Machine Translation, Sentiment Analysis, Summarization, Natural Language Generation, Multimiodal information Processing, Question-Answering etc.).  </p>
+
+<p><font color="black">Course Title:</font> Deep Learning for Natural Language Processing</p>
+<p><font color="black">Target groups:</font> Undergraduates, Postgraduates, PhDs, Faculty members, Researchers, Industry personnel </p>
+
+<p><font color="black">Duration:</font> January 10-23, 2020</p>
+<p><font color="black">Venue:</font> IIT Patna, India</p>
+
+<p><b>Last date for registration:</b> January 07, 2020 <i>(We are also allowing on-spot registration)</i></p>
+
+<p><font color="black">Speakers:</font></p>
+
+<p><b>IIT Patna</b>: Prof. Pushpak Bhattacharyya, Dr. Asif Ekbal, Dr. Sriparna Saha </p>
+
+<p><b>External speakers:</b></p>
+
+<p> Soujanya Poria, Singapore University of Technology and Design, Singapore</p>
+<p> Aditya Joshi, Postdoctoral Research Fellow, CSIRO, Australia</p>
+<p> Shweta Yadav, Postdoctoral Research Fellows, Wright State University, USA</p>
+<p> Shad Akhtar, IIIT Delhi, India</p>
+<p> Anoop  Kunchukuttan, Senior Applied Researcher, Microsoft</p>
+<p>Dr. Partha Talukdar, IISC Bangalore </p>
+-->
+
+       <div class="right-column-content noborder">
+          <div class="right-column-heading" id="gianinlp" name="gianinlp">
+              <h2 align="justify">GIAN Workshop on Unsupervised Data Mining: From Batch to Stream Mining Algorithms, April 1 – April 5, 2019.</h2>
+          </div>
+         <h2><font color="black">About the Speaker</font></h2><br/>
+         <p align="justify"><b>Prof. Stefan Kramer</b> is full professor, head of department of the institute of computer of Johannes Gutenberg University (JGU) Mainz, Germany, and honorary professor of The University of Waikato in Hamilton, New Zealand. Before his appointment at JGU, he was associate professor at the computer science department of Technische Universität München (2003 to 2011). He has been active in the field of data mining since the first conference worldwide in 1995 and is author of award-winning papers at ICDM, KDD, ILP
+and ICBK. He was vice-chair of ICDM 2013 and isregularly area chair of conferences like ECML/PKDD. His research interests include mining structured data, stream mining, process mining and clustering.
+         </p>    
+      </div> 
+
+
+      <div class="right-column-content noborder">
+          <div class="right-column-heading" id="gianinlp" name="gianinlp">
+              <h2>Workshop on Modelling Parameters Of Cognitive Effort in Translation Production, December 27-28, 2018. </h2>
+          </div>
+      </div>
+   
+
+
+      <div class="right-column-content noborder">
+          <div class="right-column-heading" id="gianinlp" name="gianinlp">
+              <h2>GIAN Workshop on Big Social Data Analysis, 26th February-2nd March, 2018</h2>
+          </div>
+
+          <h2><font color="black">About the Speaker</font></h2><br/>
+          <p align="justify"><b>Dr. Erik Cambria</b> received his BEng and MEng with honors in Electronic Engineering from the University
+of Genoa in 2005 and 2008, respectively. In 2012, he was awarded his PhD in Computing Science and Mathematics following the completion of an EPSRC project in collaboration with MIT Media Lab, which was selected as impact case study by the University of Stirling for the UK Research Excellence Framework
+(REF2014). After working at HP Labs India, Microsoft Research Asia, and NUS Temasek Labs, in 2014 Dr Cambria joined NTU
+School of Computer Science and Engineering as Assistant Professor. His current affiliations also include Rolls-Royce@NTU, Delta@NTU, A*STAR
+IHPC, MIT Synthetic Intelligence Lab, and the Brain Sciences Foundation. He is Associate Editor of Elsevier KBS and IPM, Springer AIRE and
+Cognitive Computation, IEEE CIM, and Editor of the IEEE IS Department on Affective Computing and Sentiment Analysis, fields in which he is one of
+the most productive authors. Dr Cambria is also recipient of several awards, e.g., the Temasek Research Fellowship, and is involved in many
+international conferences as Workshop Organizer, e.g., ICDM and KDD, PC Member, e.g., AAAI and ACL, Program Chair, e.g., ELM and FLAIRS, and
+Keynote Speaker, e.g., CICLing.
+        </p> 
+ 
+      </div> 
+
+
+
+ <div class="right-column-content noborder">
+        <h1></h1>
+      <div class="right-column-heading" id="gianinlp" name="gianinlp">
+
+        <h2>GIAN Workshop on Neural Machine Translation, December 04-10, 2017</h2>
+      </div>
+      <h2><font color="black">About the Speaker</font></h2><br/>
+      <p align="justify"><b>Prof. Andy Way</b> has more than 25 year experience in Machine Translation R&D, first on
+the Eurotra project, then by running his own translation company, and subsequently by
+building up his own worldleading group at DCU. Between 2011-13, he worked in the
+translation industry in the UK. On Jan 1st 2014, he rejoined DCU as Associate Professor in
+Computing to take up the role of Deputy Director of the Centre for Next Generation Localization. In April 2015, he was promoted to
+Full Professor (personal chair). From Jan 1st 2015, he has been Deputy Director of the ADAPT Centre for Digital Content
+Technology. From 2009-15 he was President of the European Association for Machine Translation and was President of the
+International Association for Machine Translation (2011-13). He is also the Editor of the Machine Translation Journal (2007-till now).
+      </p> 
+       <!--  <p align="justify">For details please <a href="giancourse/cs/gian_cognitive_brochure.pdf" style="text-decoration:none" target="_blank"><font color="bleu">download</font></a> the brochure.</p> -->
+      
+      
+</div> 
+
+  <div class="right-column-heading" id="gianinlp" name="gianinlp">
+      
+       
+        <h2>Workshop on Cognitive Science for Computational Linguists, March 27-31, 2017</h2>
+      </div>
+      <div class="right-column-content noborder">
+        <h1></h1>
+        <h2><font color="black">About the Speaker</font></h2><br/>
+         <p align="justify"><b>Prof. Massimo Poesio</b> is a Professor of Computer
+		Science in the School of Computer Science and Electronic Engineering, University of Essex (UK)
+		and a Professor in Computational Linguistics at the Center for Mind/Brain Sciences, University of
+		Trento, Italy. He is a cognitive scientist with a particular focus on human language technology; his
+		research interests include computational models of semantic interpretation (especially anaphora
+		resolution); the creation of large corpora of semantically annotated data, also using
+ 		games‐with‐a‐purpose (www.phrasedetectives.org); the study of conceptual knowledge using a combination of methods from human
+		language technology and from neuroscience; emotions and their influence on language interpretation and on agent technology and
+		deception detection.
+        </p> 
+
+         </div> 
+
+
+        <div class="right-column-heading" id="gianinlp" name="gianinlp">
+      
+       
+        <h2>GIAN Workshop on Multi-Objective Optimization, December 15-22, 2016</h2>
+      </div>
+      <div class="right-column-content noborder">
+        <h1></h1>
+        <h2><font color="black">About the Speaker</font></h2><br/>
+         <p align="justify"><b>Prof. Carlos Artemio Coello Coello</b> received a PhD in Computer Science from Tulane University (USA) in 1996. He is currently full professor with distinction (Investigador Cinvestav 3F) at CINVESTAV-IPN in Mexico City, Mexico. Dr. Coello has done pioneering research work in an area which is now known as "evolutionary multi-objective optimization", mainly related to the development of new algorithms. He is an IEEE Fellow for "contributions to multi-objective optimization and constraint-handling techniques". He is also the recipient of the prestigious 2013 IEEE Kiyo Tomiyasu Award and of the 2012 National Medal of Science and Arts in the area of Physical, Mathematical and Natural Sciences. His publications currently report over 29,000 citations, according to Google Scholar (his h-index is 67).
+        </p>
+
+         </div> 
+
+         <div class="right-column-heading" id="gianinlp" name="gianinlp">
+        <h2>GIAN workshop on Introduction to Natural Language Processing, May 2-8, 2016</h2>
+      </div>
+         <div class="right-column-content noborder">
+        <h1></h1>
+        <h2><font color="black">About the Speaker</font></h2><br/>
+        <p align="justify"><b>Prof. Sadao Kurohashi</b> is currently a professor of the Graduate School of Informatics at Kyoto University, Japan. He
+           has presented scientific papers in many national and international conferences and published in various journals and books in the
+           field of Natural Language Processing. He is and has been a regular reviewer for several journals and conferences, and has served in
+           program committees of many conferences. He has been doing pioneer work in the domain of Machine Translation and Information Extraction. He has received 2009
+           IBM Faculty Award and 2010 NTT DOCOMO Mobile Science Award.
+        </p>
+       <!--   <p align="justify">For details please <a href="pdf/gian.pdf" style="text-decoration:none" target="_blank"><font color="bleu">download</font></a> the brochure.</p> 
+        <br/>
+        <h2><font color="black">Inauguration Program</font></h2><br/>
+        <p align="justify"><b>Inauguration program</b> has been scheduled on May 2, 2016 from 09:00 am at Room No. 407 (NKN room), Block 9 (Tutorial Block),IIT Patna. 
+        Details can be downloaded from the following links<br/> [<a href="pdf/NLP-GIAN-CourseInauguration.pdf" style="text-decoration:none" target="_blank"><font color="bleu"><b>NLP-GIAN-Course-Inauguration.pdf</b></font></a>] ,[<a href="pdf/NLP-GIAN-CourseInauguration.doc" style="text-decoration:none" target="_blank"><font color="bleu"><b>NLP-GIAN-Course-Inauguration.doc</b></font></a>]
+        </p><br/>
+        <h2><font color="black">NLP-GIAN-Course-Schedule</font></h2><br/>
+        <p align="justify">Details <b>course schedule</b> from 02 May - 08 May ,2016 can be downloaded from the following links <br/>
+        [<a href="pdf/NLP-GIAN-CourseSchedule.pdf" style="text-decoration:none" target="_blank"><font color="bleu"><b>NLP-GIAN-Course-Schedule.pdf</b></font></a>] ,[<a href="pdf/NLP-GIAN-CourseSchedule.doc" style="text-decoration:none" target="_blank"><font color="bleu"><b>NLP-GIAN-Course-Schedule.doc</b></font></a>]
+        </p><br/>-->
+         </div> 
+    </div>
+  </div>
+</div>
+    
+    <div class="footer">
+  <div class="copy-rights">Copyright &copy; 2016-Current - All Rights Reserved - AI-NLP-ML Group, Department of CSE, IIT Patna; Designed & Developed by Sabyasachi Kamila; Maintained by Aizan and Mamta</div>
+</div>
+    </div>
+</body>
+</html>

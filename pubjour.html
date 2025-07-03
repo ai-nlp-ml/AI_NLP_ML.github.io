@@ -1,0 +1,1702 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
+<title>GIAN course on Deep Learning Techniques for Conversational Artificial Intelligence, April 13-24, 2022: AI-NLP-ML Group IIT Patna</title>
+<link rel="shortcut icon" href="images/front_logo.ico" >
+<link rel="stylesheet" href="layout/styles/styles.css" type="text/css" />
+<link href="css/menu.css" rel="stylesheet">
+<style>
+/* THIS IS FOR COLLABORATION AND PROJECTS */
+#shape1 {
+    border-radius: 25px;
+    border: 2px solid #2D82B9;
+    padding: 0px; 
+    width: 150px;
+    height: 130px;    
+}
+/* THIS IS FOR AINMG PHOTO */
+#shape2 {
+    border-radius: 25px;
+    border: 2px solid #2D82B9;
+    padding: 5px; 
+    width: 250px;
+    height: 150px;    
+}
+</style>
+<style>
+/* THIS IS FOR HEADER PHOTO */
+    #shape3 {
+    border-radius: 25px;
+    background: #2D82B9 ;
+    padding: 0px; 
+    width: 100%;
+    height: 160px;  
+    margin-top:10px;
+    margin-bottom:10px;  
+     
+}
+#shape4 {
+      border-radius: 25px;
+    background: #2D82B9;
+    padding: 0px; 
+       
+}
+#heading-h1{
+    font-weight:normal;
+	font-size:30px;
+}
+#heading-p{
+    font-weight:normal;
+	font-size:24px;
+}
+</style>
+<link rel="stylesheet" href="css/style2.css" type="text/css" media="screen" />
+
+</head>
+<body>
+<div id="wrapper" >
+      <div class="columns-container">
+  <div class="columns-wrapper">
+  <!--########################################## HEADER STARTS HERE.#################################################### -->
+   <div id="title-heading">
+    <!--  <img src="img/bg_new2.png" height=20px width=100% style="position: relative; top: 0; left: 0;"/>-->
+    <table width="100%" bgcolor="#f1f1ef" border="0" bordercolor="#c9dea3" rules="none">
+      <tr>
+        <td width="250px"><div id="shape3" style="position: relative; left: 0; top: 0;">
+             <a href="http://www.iitp.ac.in/" target="_blank"><img id="shape4" src="img/nlp logo.png" width=200px height=130px  style="position: absolute; top: 15px;left:25px;"/></a>
+        </div></td>
+        <td width="14px">
+        <td width="960px"><div id="shape3" style="position: relative; left: 0; top: 0;">
+               <!--   <img src="img/bg_new.png" height=200px width=100% style="position: relative; top: 0; left: 0;"/>-->
+              <!--  <img id="shape4" src="img/sanskrit.png" height="150px" width="160px" style="position: absolute; top: 15px; left: 51px;"/>-->
+              <br><br><h1 id="heading-h1" align="center" style="text-shadow: 1px 1px #59767c; font-family:Book Antiqua;"><font color="#fbfcfc">AI-NLP-ML GROUP</font></h1>
+               <br><p id="heading-p" align="center"><a href="http://www.iitp.ac.in/index.php/departments/engineering/computer-science-a-engineering.html" style="text-decoration: none" target="_blank"><font color="#cafafe" style="font-family:Book Antiqua;">Department of Computer Science and Engineering</font></a></p>
+               <br><p id="heading-p" align="center"><a href="http://www.iitp.ac.in/index.php/index.html" style="text-decoration: none" target="_blank"><font color="#F4B45F" style="font-family:Book Antiqua;"><b>Indian Institute of Technology Patna</b></font></a></p> 
+ <!--  <img id="shape4" src="img/ai.jpg" height="150px" width="160px" style="position: absolute; top: 15px; right: 51px;"/>-->
+        </div></td>
+        
+      </tr>
+    </table>
+   
+    </div>
+    
+	<!-- start header -->
+	<header>	
+		<div class="container" >
+				<div class="navbar navbar-static-top" >
+					<div class="navigation" >
+						<nav>
+						<ul class="nav topnav bold">
+							<li class="dropdown">
+							<a href="http://www.iitp.ac.in/~ai-nlp-ml/">Home<i class="icon-angle-down"></i></a>
+							</li>
+							<li class="dropdown">
+							<a href="#">People<i class="icon-angle-down"></i></a>
+							<ul style="display: none;" class="dropdown-menu bold">
+								<li><a href="students.html">Researchers</a>
+								</li>
+								<li><a href="faculty.html">Supervisors</a></li>
+														
+								
+							</ul>
+							</li>
+							<li class="dropdown">
+							<a href="#">Downloads<i class="icon-angle-down"></i></a>
+							<ul class="dropdown-menu bold">
+								<li><a href="cscl-iitp.html">Course Materials</a></li>
+								<li><a href="lectures.html">Lectures</a></li>
+								<li><a href="resources.html">Resources</a></li>
+<li><a href="dissertations.html">Dissertations</a></li>								
+							</ul>
+							</li>
+							<li class="dropdown">
+							<a href="tools.html">Tools<i class="icon-angle-down"></i></a>
+							</li>							
+
+
+							<li class="dropdown">
+							<a href="#">Talks<i class="icon-angle-down"></i></a>
+                                                        <ul class="dropdown-menu bold">
+                                                                <li><a href="nlp-connect.html">NLP Connect Talk Series</a></li>
+								<li><a href="research_talks.html">Research Talks</a></li>
+									
+							</ul>
+							</li>
+							<li class="dropdown">
+							<a href="#">Events<i class="icon-angle-down"></i></a>
+							<ul class="dropdown-menu bold">
+								<li><a href="cep-dnlp-iitp.html">CEP Courses</a></li>
+								<li><a href="workshops.html">Workshops</a></li>
+								<li><a href="icon2020.html">ICON 2020</a></li>
+																
+							</ul>
+							</li>
+                                                        <li class="dropdown active">
+							<a href="#">Publications<i class="icon-angle-down"></i></a>
+							<ul style="display: none;" class="dropdown-menu bold">
+								<li><a href="pubconf.html">Conferences</a></li>
+								<li><a href="pubjour.html">Journals</a></li>
+								<li><a href="pubwork.html">Workshops</a></li>
+								
+								
+							</ul>
+							</li>
+							<li class="dropdown">
+							<a href="gallery.html">Gallery<i class="icon-angle-down"></i></a>
+							</li>
+							<li class="dropdown">
+							<a href="contacts.html">Contact Us<i class="icon-angle-down"></i></a>
+							</li>
+ 
+						</ul>
+						</nav>
+					</div>
+					<!-- end navigation -->
+				</div>
+			</div>
+
+	</header>	    <script src="js/jquery.js"></script>
+	<script src="js/custom.js"></script>
+  
+   <!-- ############################################## HEADER ENDS HERE #######################################################-->
+  <!-- ############################################## LEFT COLUMN STARTS HERE ######################################## -->
+    <div class="left-column">
+       
+      <div class="left-column-panel">
+
+        <div class="left-column-panel-middle">
+          <h1><font color="#991e70">Notice Board</font></h1>
+          <h2>Current Notifications</h2>
+          
+      <!-- #################################### NOTICES STARTS HERE ################################################# -->    
+          <div class="sub-menu">
+                <script src="js/jquery-latest.pack.js" type="text/javascript"></script>
+                <script src="js/jcarousellite_1.0.1c4.js" type="text/javascript"></script>
+                <script type="text/javascript">
+                $(function() {
+	            $(".newsticker-jcarousellite").jCarouselLite({
+		          vertical: true,
+		          hoverPause:true,
+		          visible: 5,
+		          auto:500,
+		          speed:2000
+	             });
+                 });
+              </script>
+               <div class="newsticker-jcarousellite">
+			<ul>
+
+<li>			
+	<div class="info">
+<p align="center"  title="One paper accepted for publication in Expert Systems With Applications. (h5-index: 132, Impact Factor: 8.665)"><a href="accepted.html#ESA_PP2023"><font  color="#311d38">One paper accepted for publication in <b>Expert Systems With Applications. (h5-index: 132, Impact Factor: 8.665)</b>.</font></a></p>		
+	</div>
+			<div class="clear"></div>
+		</li>
+
+			<li>			
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Scientific Reports (h5 index: 206)"><a href="accepted.html#SR_DV2023"><font  color="#311d38">One paper accepted for publication in <b>Scientific Reports (h5 index: 206)</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			<li>			
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Plosone (With Samsung Research) (h5 index: 186)"><a href="accepted.html#PO_DV2023"><font  color="#311d38">One paper accepted for publication in <b>Plosone (With Samsung Research) (h5 index: 186)</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			<li>			
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Plosone (with Accenture) (h5 index: 186)"><a href="accepted.html#PO_ZA2023"><font  color="#311d38">One paper accepted for publication in <b>Plosone (with Accenture) (h5 index: 186)</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			<li>			
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Multimedia Tools and Applications, Springer (h5 index: 87)"><a href="accepted.html#MTA_GK2023"><font  color="#311d38">One paper accepted for publication in <b>Multimedia Tools and Applications, Springer (h5 index: 87)</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			<li>			
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Multimedia Tools and Applications, Springer (h5 index: 87)"><a href="accepted.html#MTA_GS2023"><font  color="#311d38">One paper accepted for publication in <b>Multimedia Tools and Applications, Springer (h5 index: 87)</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			<li>			
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in International Journal of Digital Libraries, Springer (IF-1.9)"><a href="accepted.html#IJDL_SK2023"><font  color="#311d38">One paper accepted for publication in <b>International Journal of Digital Libraries, Springer (IF-1.9)</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>			
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Information  Fusion, Elsevier (IF: 17.56)"><a href="accepted.html#IF_MF2023"><font  color="#311d38">One paper accepted for publication in <b>Information  Fusion, Elsevier (IF: 17.56)</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>			
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Knowledge Based System, Elsevier (IF-8.038)"><a href="accepted.html#KBS_SG2023"><font  color="#311d38">One paper accepted for publication in <b>Knowl. Based System, Elsevier (IF-8.038)</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>			
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in IEEE ACM Trans. Audio Speech Lang. Processing (h5 index: 66; IF-3.919)"><a href="accepted.html#IEEET_GS2023"><font  color="#311d38">One paper accepted for publication in <b>IEEE ACM Trans. Audio Speech Lang. Processing (h5 index: 66; IF-3.919)</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Information Processing and Management, Elsevier (Core-A)"><a href="accepted.html#IPM_SG2022"><font  color="#311d38">One paper accepted for publication in <b>Information Processing and Management, Elsevier (Core-A)</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Knowledge-Based Systems, Elsevier."><a href="accepted.html#KBS_SG2022"><font  color="#311d38">One paper accepted for publication in <b>Knowledge-Based Systems, Elsevier (Impact Factor: 8.139)</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>		
+		<div class="info">
+<p align="center"  title="Soumitra Ghosh, a Ph.D. Scholar from our group has been awarded the Microsoft Research Travel Grant 2022 to attend the 31st International Joint Conference on Artificial Intelligence (IJCAI 2022) to be held in Messe Wien, Vienna, Austria, from 23-29 July 2022."><a href="notices.html"><font  color="#311d38"><b>Soumitra Ghosh</b>, a Ph.D. Scholar from our group has been awarded the <b>Microsoft Research Travel Grant 2022</b> to attend the <b>31st International Joint Conference on Artificial Intelligence (IJCAI 2022)</b> to be held in <b>Messe Wien, Vienna, Austria</b>, from 23-29 July 2022.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in PLOS ONE (h5 index: 185)"><a href="accepted.html#PLOSONE_ZA2022"><font  color="#311d38">One paper accepted for publication in <b>PLOS ONE (h5 index: 185)</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Natural Language Engineering (Core Rank A), Cambridge University Press."><a href="accepted.html#NLE_SG2022"><font  color="#311d38">One paper accepted for publication in <b>Natural Language Engineering (Core Rank A), Cambridge University Press</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in IEEE Transaction on Computational Social Systems ."><a href="accepted.html#TCSS_ZA2022"><font  color="#311d38">One paper accepted for publication in <b>IEEE Transaction on Computational Social Systems </b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in IJCAI-ECAI 2022 (AI for Good Track)) (Core Rank-A*)."><a href="accepted.html#IJCAIECAI2022"><font  color="#311d38">One paper accepted for publication in <b>IJCAI-ECAI 2022 (AI for Good Track)</b> (Core Rank-A*)</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in International Journal on Digital Libraries (2022)."><a href="accepted.html#IJDL2022"><font  color="#311d38">One paper accepted for publication in <b></b>International Journal on Digital Libraries (2022).</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="GIAN course on 'Deep Learning Techniques for Conversational AI'. The foreign speaker is Dr. Soujanya Poria, Singapore University of Technology Design (SUTD), Singapore from April 13-24, 2022."><a href="workshops.html#gianai2022"><font  color="#311d38">GIAN course on <b>'Deep Learning Techniques for Conversational AI'</b> from <b>April 13-24, 2022</b>.</b></font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in SIGIR 2022) (Core Rank-A*)."><a href="accepted.html#SIGIR2022"><font  color="#311d38">One paper accepted for publication in <b>SIGIR 2022</b> (Core Rank-A*)</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Neurocomputing, Elsevier."><a href="accepted.html#NEURO2022"><font  color="#311d38">One paper accepted for publication in <b></b>Neurocomputing, Elsevier.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in IEEE Transaction on Affective Computing."><a href="accepted.html#TAFFC_MF2022"><font  color="#311d38">One paper accepted for publication in <b>IEEE Transaction on Affective Computing</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in IEEE Transaction on Computational Social Systems ."><a href="accepted.html#TCSS_KM2022"><font  color="#311d38">One paper accepted for publication in <b>IEEE Transaction on Computational Social Systems </b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Scientific Reports, Nature Publishing Group."><a href="accepted.html#SR2022"><font  color="#311d38">One paper accepted for publication in <b>Scientific Reports, Nature Publishing Group</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Expert System with Applications, Elsevier."><a href="accepted.html#ESA2022"><font  color="#311d38">One paper accepted for publication in <b>Expert System with Applications, Elsevier</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>	
+		<div class="info">							
+<p align="center"  title="One paper accepted for publication in ACM Transaction on Asian and Low-resource Language Information Processing (ACM TALLIP)."><a href="accepted.html#TALLIP2022"><font  color="#311d38">One paper accepted for publication in <b>ACM Transaction on Asian and Low-resource Language Information Processing (ACM TALLIP)</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Computational Linguistics journal (Core Rank A*) by MIT Press."><a href="accepted.html#CL2021"><font  color="#311d38">One paper accepted for publication in <b>Computational Linguistics journal (Core Rank A*) by MIT Press</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>	
+		<div class="info">							
+<p align="center"  title="One paper accepted for publication in PLOS ONE (h5 index: 185, Impact Factor: 3.24)."><a href="accepted.html#PLOSONE2021"><font  color="#311d38">One paper accepted for publication in <b>PLOS ONE (h5 index: 185, Impact Factor: 3.24)</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>		
+		<div class="info">
+<p align="center"  title="Three papers accepted for publication in ECIR 2022 (core ranking A)."><a href="accepted.html#ECIR2022"><font  color="#311d38">Three papers accepted for publication in <b>ECIR 2022 (core ranking A)</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>	
+		<div class="info">							
+<p align="center"  title="One paper accepted for publication in IEEE Transactions on Affective Computing (impact factor 10.506)."><a href="accepted.html#TAFFC2021"><font  color="#311d38">One paper accepted for publication in <b>IEEE Transactions on Affective Computing (impact factor 10.506).</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>
+		<div class="info">								
+<p align="center"  title="One paper accepted for publication in Machine Translation Journal, Springer."><a href="accepted.html#MT2021"><font  color="#311d38">One paper accepted for publication in <b>Machine Translation Journal, Springer </b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>			
+						
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Scientific Reports."><a href="accepted.html#SR2021"><font  color="#311d38">One paper accepted for publication in <b>Scientific Reports</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="Our faculty members, Dr. Asif Ekbal and Dr. Sriparna Saha are listed in the list of the top 2% of scientists in the world published by Stanford University, Elsevier. Some media reports on this are attached herewith."><a href="notices.html"><font  color="#311d38">Our faculty members, <b>Dr. Asif Ekbal</b> and <b>Dr. Sriparna Saha</b> are listed in the list of the <b>top 2% of scientists in the world</b> published by <b>Stanford University, Elsevier</b>. Some media reports on this are attached herewith.</b>.</p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+						<li>		
+		<div class="info">
+<p align="center"  title="Sandeep Kumar, PhD Scholar, receives the prestigious Prime Minister's Research Fellowship (PMRF) Award for his Doctoral Studies"><a href="notices.html"><font  color="#311d38"><b>Sandeep Kumar</b>, PhD Scholar, receives the prestigious <b>Prime Minister's Research Fellowship (PMRF)</b> Award for his Doctoral Studies</b>.</p>		
+		</div>
+				<div class="clear"></div>
+			</li>			
+
+						<li>		
+		<div class="info">
+<p align="center"  title="Dr. Sriparna Saha is invited to join the  Editorial Board of Engineering Applications of Artificial Intelligence (EAAI), Elsevier journal (impact factor: 6.2)."><a href="notices.html"><font  color="#311d38"><b>Dr. Sriparna Saha</b> is invited to join the  <b>Editorial Board of Engineering Applications of Artificial Intelligence (EAAI), Elsevier journal (impact factor: 6.2).</b></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+						<li>		
+		<div class="info">
+<p align="center"  title="Mr. Abhisek Tiwari is selected for the prestigious Prime Minister's Research Fellowship (PMRF). Abhishek is jointly guided by Dr. Sriparna Saha and Prof. Pushpak Bhattacharyya.
+
+The PMRF scholar gets Rs. 70,000 per month for the first two years and then an increased scholarship third year onwards. Apart from this, each scholar would be eligible for a research grant of Rs. 2 Lakhs per year.."><a href="notices.html"><font  color="#311d38"><b>Mr. Abhisek Tiwari</b> is selected for the prestigious <b>Prime Minister's Research Fellowship (PMRF)</b>.</p>		
+		</div>
+				<div class="clear"></div>
+			</li>			
+
+			<li>		
+		<div class="info">
+<p align="center"  title="Six papers accepted for publication in 8th International Conference on Neural Information Processing (ICONIP-2021)."><a href="accepted.html#ICONIP2021"><font  color="#311d38">Six papers accepted for publication in <b>8th International Conference on Neural Information Processing (ICONIP-2021)</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in IEEE Symposium Series on Computational Intelligence."><a href="accepted.html#SSCI2021"><font  color="#311d38">One paper accepted for publication in <b>IEEE Symposium Series on Computational Intelligence</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in IEEE Access(h5-index: 164)."><a href="accepted.html#IEEEAccess2021"><font  color="#311d38">One paper accepted for publication in <b>IEEE Access</b> (h5-index: 164).</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Multimedia Tools and Applications (impact factor: 2.757)."><a href="accepted.html#MTA22021"><font  color="#311d38">One paper accepted for publication in <b> Multimedia Tools and Applications </b>(impact factor: 2.757).</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>	
+
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in  IEEE/ACM Transactions on Computational Biology and Bioinformatics."><a href="accepted.html#TCBB2021"><font  color="#311d38">One paper accepted for publication in <b>IEEE/ACM Transactions on Computational Biology and Bioinformatics</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in ACM Transactions on Asian and Low-Resource Language Information Processing."><a href="accepted.html#TALLIP2021"><font  color="#311d38">One paper accepted for publication in <b>ACM Transactions on Asian and Low-Resource Language Information Processing</b></font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+						
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in IEEE Transactions on Computational Social Systems."><a href="accepted.html#TCSS2021"><font  color="#311d38">One paper accepted for publication in <b>IEEE Transactions on Computational Social Systems</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in ACM Transactions on Information Systems (impact factor: 2.312)."><a href="accepted.html#ACMTIS2021"><font  color="#311d38">One paper accepted for publication in <b> ACM Transactions on Information Systems</b> (impact factor: 2.312).</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>	
+
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Expert Systems with Applications journal (impact factor: 6.954) (accepted)."><a href="accepted.html#TCBB2021"><font  color="#311d38">One paper accepted for publication in <b>Expert Systems with Applications journal</b> (impact factor: 6.954) (accepted).</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Multimedia Tools and Applications (impact factor: 2.313) (accepted)."><a href="accepted.html#MTA12021"><font  color="#311d38">One paper accepted for publication in <b>Multimedia Tools and Applications</b> (impact factor: 2.313) (accepted).</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>	
+				
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Information Processing and Management (IPM)."><a href="accepted.html#IPM2022"><font  color="#311d38">One paper accepted for publication in <b> Information Processing and Management (IPM)</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in IEEE Transactions on Computational Social Systems (accepted)."><a href="accepted.html#IEEETCSS2021"><font  color="#311d38">One paper accepted for publication in <b> IEEE Transactions on Computational Social Systems</b>.</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>			
+						<li>		
+		<div class="info">
+<p align="center"  title="1. Towards Developing a Multilingual and Code-Mixed Visual Question Answering System by Knowledge Distillation, EMNLP 2021 (Findings)
+2. Three papers accepted in The 23rd International Conference on Asia-Pacific Digital Libraries (ICADL 2021)
+a. ContriSci: A BERT-based Multitasking Deep Neural Architecture to Identify Contribution Statements from Research Papers
+b. PEERAssist: Leveraging on Paper-Review Interactions To Predict Peer Review Decisions
+c. DataQuest: An Approach To Automatically Extract Dataset Mentions From Scientific Papers
+3. What the fake? Probing Misinformation Detection Standing on the Shoulder of Novelty and Emotion, In Information Processing and Management, Elsevier"><a href="notices.html"><font  color="#311d38"><b>Recently accepted papers from the AI-NLP-ML Group</b>.</p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="Blog on code-mixing by Arindam Chatterjee, PhD scholar of AI-NLP-ML group (an initiative of IIT Patna-Wipro Collaboration)"><a href="https://wiprotechblogs.medium.com/a-tale-of-two-languages-the-code-switch-mix-story-d88e105b07f4"><font  color="#311d38">Blog on code-mixing by Arindam Chatterjee, PhD scholar of AI-NLP-ML group (an initiative of IIT Patna-Wipro Collaboration)</b>.</p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+						<li>		
+		<div class="info">
+<p align="center"  title="ADVERTISEMENT NO:R&D/242-352-461-474-508/199  DATED : 23.07.2021; Name of the Posts : Junior Research Fellow, Senior Research Fellow, Lexicographer, Research Associate; Project Title & Funding Agency : Research on “AI-NLP-ML”, funded by various industries and govt. bodies (Govt bodies: Meity, SERB, MHA; Industries: Wipro, Flipkart, Accenture)."><a href="notices.html"><font  color="#311d38">ADVERTISEMENT: <b>Junior Research Fellow, Senior Research Fellow, Lexicographer, Research Associate</b>.</p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			<li>		
+		<div class="info">
+<p align="center"  title="Dr. Sriparna Saha has joined  PLOS ONE (h5-index: 175) Editorial Board as an Academic Editor."><a href="notices.html"><font  color="#311d38"><b>Dr. Sriparna Saha</b> has joined <b>PLOS ONE</b> (h5-index: 175) <b>Editorial Board</b> as an <b>Academic Editor</b>.</p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>		
+		<div class="info">
+<p align="center"  title="Two papers accepted for publication in IEEE/ACM Transactions on Computational Biology and Bioinformatics (impact factor: 2.428) (accepted)."><a href="accepted.html#TCBB2021"><font  color="#311d38">Two papers accepted for publication in <b> IEEE/ACM Transactions on Computational Biology and Bioinformatics </b>(impact factor: 2.428).</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>		
+		<div class="info">
+<p align="center"  title="Two papers accepted for publication in IEEE Transactions on Computational Social Systems (accepted)."><a href="accepted.html#TCSS2021"><font  color="#311d38">Two papers accepted for publication in <b> IEEE Transactions on Computational Social Systems. </b></font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in European Physical Journal Special Topics (impact factor: 1.668) (accepted)."><a href="accepted.html#EPJST2021"><font  color="#311d38">one paper accepted for publication in <b> European Physical Journal Special Topics </b> (impact factor: 1.668) (accepted).</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in  IEEE Transactions on Emerging Topics in Computational Intelligence (impact factor: 4.62) (accepted)"><a href="accepted.html#TETCI2021"><font color="#311d38">One paper accepted for publication in <b>  IEEE Transactions on Emerging Topics in Computational Intelligence</b> (impact factor: 4.62) (accepted)</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>			
+
+<li>		
+		<div class="info">
+<p align="center"  title="Dr. Sriparna Saha has been appointed as Associate Editors of  IEEE/ACM Transactions on Computational Biology and Bioinformatics (impact factor: 3.015), Expert Systems with Applications (impact factor: 5.452, h5-index: 111), IEEE Internet Computing (impact factor is 4.231 - 2-year Impact Factor = 5.277 - H-index = 103)"><a href="notices.html"><font  color="#311d38"><b>Dr. Sriparna Saha</b> has been appointed as <b>Associate Editors</b> of <b>IEEE/ACM Transactions on Computational Biology and Bioinformatics (impact factor: 3.015), Expert Systems with Applications (impact factor: 5.452, h5-index: 111), IEEE Internet Computing (impact factor is 4.231 - 2-year Impact Factor = 5.277 - H-index = 103)</b>.</p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+<li>		
+		<div class="info">
+<p align="center"  title="Prof. Pushpak Bhattacharyya and Dr. Asif Ekbal has been featured in the latest CS Rankings"><a href="notices.html"><font  color="#311d38"><b>Prof. Pushpak Bhattacharyya</b> and <b> Dr. Asif Ekbal </b>has been featured in the latest <b>CS Rankings</b>.</p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>		
+		<div class="info">
+<p align="center"  title="Two papers accepted for publication in JCDL 2021 (Core Rank-A*)."><a href="accepted.html#JCDL2021"><font  color="#311d38">Two papers accepted for publication in <b>Joint Conference on Digital Libraries (JCDL 2021)</b> (Core Rank-A*)</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Information Processing and Management (IPM), Elsevier (IF-4.784, Core-A)."><a href="accepted.html#IPM 2021"><font  color="#311d38">One paper accepted for publication in <b>Information Processing and Management (IPM), Elsevier</b> (IF-4.784, Core-A)</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>			
+
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in ACM Transactions on Asian and Low-Resource Language Information Processing (accepted)."><a href="accepted.html#TALLIP2021"><font  color="#311d38">One paper accepted for publication in <b>ACM Transactions on Asian and Low-Resource Language Information Processing</b> (accepted).</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Applied Intelligence (impact factor: 3.325) (accepted)."><a href="accepted.html#AI2021"><font  color="#311d38">One paper accepted for publication in <b>Applied Intelligence</b> (impact factor: 3.325) (accepted).</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Plos One (h5 index: 175, impact factor: 2.74) (accepted)."><a href="accepted.html#PLOSONE2021"><font  color="#311d38">One paper accepted for publication in <b>Plos One</b> (h5 index: 175, impact factor: 2.74) (accepted)</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in IEEE Transactions on Computational Social Systems (accepted)."><a href="accepted.html#IEEETCSS2021"><font  color="#311d38">One paper accepted for publication in <b>IEEE Transactions on Computational Social Systems</b> (accepted).</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="Two papers accepted for publication in Knowledge-Based Systems (impact factor: 5.921) (accepted)."><a href="accepted.html#KBS2021"><font  color="#311d38">Two papers accepted for publication in <b>Knowledge-Based Systems</b> (impact factor: 5.921) (accepted).</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Pattern Recognition Letters (impact factor: 3.255) (accepted)."><a href="accepted.html#PRL2021"><font  color="#311d38">One paper accepted for publication in <b>Pattern Recognition Letters</b> (impact factor: 3.255) (accepted).</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Wiley Transactions on Emerging Telecommunications Technologies (impact factor: 1.594)(accepted)."><a href="accepted.html#TETT2021"><font  color="#311d38">One paper accepted for publication in <b>Wiley Transactions on Emerging Telecommunications Technologies</b> (impact factor: 1.594)(accepted).</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Cognitive Computation."><a href="accepted.html#CC2021"><font  color="#311d38">One paper accepted for publication in <b>Cognitive Computation</b> (impact factor: 4.307)</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in ACM Transactions on Knowledge Discovery from Data (Impact Score: 5.78)."><a href="accepted.html#TKDD"><font  color="#311d38">One paper accepted for publication in <b>ACM Transactions on Knowledge Discovery from Data</b> (Impact Score: 5.78)</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Applied Intelligence."><a href="accepted.html#AI2020"><font  color="#311d38">One paper accepted for publication in <b>Applied Intelligence</b> (impact factor: 3.325, h5-index: 42)</font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+			
+<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in AAAI 2020."><a href="accepted.html#AAAI2020"><font  color="#311d38">One paper accepted for publication in <b>AAAI 2020</b></font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			
+<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Cognitive Computation, Springer."><a href="accepted.html#COGN2020"><font  color="#311d38">One paper accepted for publication in <b>Cognitive Computation, Springer</b></font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>	
+			
+<li>		
+		<div class="info">
+<p align="center"  title="One papers accepted for publication in ACM Transactions on Asian and Low-Resource Language Information Processing."><a href="accepted.html#TALLIP2020"><font  color="#311d38">One paper accepted for publication in <b>ACM Transactions on Asian and Low-Resource Language Information Processing</b></font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+<p align="center"  title="One papers accepted for publication in Applied Soft Computing."><a href="accepted.html#ASC2020"><font  color="#311d38">One paper accepted for publication in <b>Applied Soft Computing</b></font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+<li>		
+		<div class="info">
+<p align="center"  title="One papers accepted for publication in Nature Scientific Report."><a href="accepted.html#NSR2020"><font  color="#311d38">One paper accepted for publication in <b>Nature Scientific Report</b></font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Expert Systems with Applications"><a href="accepted.html#ESA2020"><font  color="#311d38">One paper accepted for publication in <b>Expert Systems with Applications</b></font></a></p>
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Multimedia Systems"><a href="accepted.html#MS2020"><font  color="#311d38">One paper accepted for publication in <b>Multimedia Systems</b></font></a></p>
+		</div>
+				<div class="clear"></div>
+			</li>	
+						
+<li>		
+		<div class="info">
+<p align="center"  title="Two papers accepted for publication in  COLING 2020."><a href="accepted.html#COLING2020"><font  color="#311d38">Two papers accepted for publication in <b> COLING 2020 </b></font></a></p>		
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in EMNLP Findings (2020)"><a href="accepted.html#EMNLPF2020"><font  color="#311d38">One paper accepted for publication in <b>EMNLP Findings (2020)</b></font></a></p>
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+<li>		
+		<div class="info">
+<p align="center"  title="Three papers accepted for publication in AACL-IJCNLP 2020."><a href="accepted.html#AACL-IJCNLP2020"><font  color="#311d38">Three papers accepted for publication in <b> AACL-IJCNLP 2020 </b></font></a></p>
+		</div>
+				<div class="clear"></div>
+			</li>						
+
+<li>		
+		<div class="info">
+<p align="center"  title="Two papers accepted for publication in ICONIP 2020"><a href="accepted.html#ICONIP2020"><font  color="#311d38">Two papers accepted for publication in <b>ICONIP 2020</b></font></a></p>
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+<p align="center"  title="One paper accepted for publication in Knowledge Based System, Elsevier."><a href="accepted.html#KBS2020"><font  color="#311d38">One paper accepted for publication in <b> Knowledge Based System, Elsevier</b></font></a></p>
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center" title="One paper accepted for publication in Computers & Electrical Engineering (impact factor: 2.663) journal. "><a href="accepted.html#CEE2020"><font color="black" >One paper accepted for publication in Computers & Electrical Engineering (impact factor: 2.663) journal.</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+			<li>		
+		<div class="info">
+		<p align="center" title="One paper accepted for publication in IEEE Journal of Biomedical and Health Informatics (impact factor 5.180)"><a href="accepted.html#BHI2020"><font color="black" >One paper accepted for publication in IEEE Journal of Biomedical and Health Informatics.</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center" title="Four papers accepted for publication in ICONIP 2020."><a href="accepted.html#ICONIP2020"><font color="black" >Four papers accepted for publication in ICONIP 2020 (Category A)</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+<li>		
+		<div class="info">
+		<p align="center" title="One paper accepted for publication in Cognitive Computation."><a href="accepted.html#COGN2020"><font color="black" >One paper accepted for publication in Cognitive Computation</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+<li>		
+		<div class="info">
+		<p align="center" title="One paper accepted for publication in IEEE Transaction on Affective Computing."><a href="accepted.html#TAFFC2020"><font color="black" >One paper accepted for publication in IEEE Transaction on Affective Computing</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+<li>		
+		<div class="info">
+		<p align="center" title="One paper accepted for publication in Computers in Biology and Medicine."><a href="accepted.html#CBM2020"><font color="black" >One paper accepted for publication in Computers in Biology and Medicine.</font></a></p>
+				
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center" title="One paper accepted for publication in Swarm and Evolutionary Computation."><a href="accepted.html#SEC2020"><font color="black" >One paper accepted for publication in Swarm and Evolutionary Computation</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center" title="One paper accepted for publication in IEEE/ACM Transactions on Computational Biology and Bioinformatics."><a href="accepted.html#TCBB2020"><font color="black" >One paper accepted for publication in IEEE/ACM Transactions on Computational Biology and Bioinformatics.</font></a></p>
+				
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center" title="Two projects."><a href="accepted.html#TCSS2020"><font color="black" >One paper accepted for publication in IEEE Transactions on Computational Social Systems.</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+<li>		
+		<div class="info">
+		<p align="center" title="One paper accepted for publication in Neurocomputing."><a href="accepted.html#NC"><font color="black" >One paper accepted for publication in Neurocomputing. </font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+<li>		
+		<div class="info">
+		<p align="center" title="Two projects."><a href="cproject.html#2Proj"><font color="black" >AI-NLP-ML research group of IIT Patna have undertaken two sponsored projects.</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center" title="One paper accepted for publication in EAMT 2020."><a href="accepted.html#EAMT"><font color="black" >One paper accepted for publication in EAMT 2020.</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center" title="One paper accepted for publication in Scientific Report."><a href="accepted.html#SR2020"><font color="black" >One paper accepted for publication in Scientific Report (h5 index 178, impact factor: 4.120) (accepted). </font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center" title="Asif Ekbal has taken up the responsibility of Associate Editor, SN Computer Science, Springer"><font color="black" >Asif Ekbal has taken up the responsibility of Associate Editor, SN Computer Science, Springer.</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center" title="Asif Ekbal will serve as the Area Chair of Resources and Evaluation track of EACL 2021."><font color="black" >Asif Ekbal will serve as the Area Chair of Resources and Evaluation track of EACL 2021.</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+			
+<li>		
+		<div class="info">
+		<p align="center" title="Three papers accepted for publication in IEEE International Conference on Pattern Recognition."><a href="accepted.html#ICPR"><font color="black" >Three papers accepted for publication in IEEE International Conference on Pattern Recognition.</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>			
+
+<li>		
+		<div class="info">
+		<p align="center" title="Three papers accepted for publication in IEEE International Conference on Pattern Recognition."><a href="accepted.html#ICPR"><font color="black" >Three papers accepted for publication in IEEE International Conference on Pattern Recognition.</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center" title="One paper accepted for publication in Multimedia Tools and Applications (impact factor: 2.101)."><a href="accepted.html#MTA2020"><font color="black" >One paper accepted for publication in Multimedia Tools and Applications (impact factor: 2.101).</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center" title="One paper accepted for publication in PLOS ONE."><a href="accepted.html#PLOSONE"><font color="black" >One paper accepted for publication in PLOS ONE (h5 index: 176, impact factor: 2.776)  </font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center" title="One paper accepted for publication in Expert Systems with Applications 2020."><a href="accepted.html#ESA2020"><font color="black" >One paper accepted for publication in Expert Systems with Applications 2020.</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center" title="One paper accepted for publication in Soft Computing journal, 2020."><a href="accepted.html#SOFTCOMP2020"><font color="black" >One paper accepted for publication in Soft Computing journal, 2020 </font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center" title="One paper accepted for publication in ACM Transactions on Knowledge Discovery and Data (TKDD)."><a href="accepted.html#TKDD"><font color="black" >One paper accepted for publication in ACM Transactions on Knowledge Discovery and Data (TKDD). </font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center" title="One paper accepted for publication in IEEE Computational Intelligence Magazine (CIM)."><a href="accepted.html#CIM"><font color="black" >One paper accepted for publication in IEEE Computational Intelligence Magazine (CIM). </font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+
+
+<li>		
+		<div class="info">
+		<p align="center" title="One paper accepted for publication in Multimedia Tools and Applications, 2020 ."><a href="accepted.html#MTA2020"><font color="black" >One paper accepted for publication in Multimedia Tools and Applications, 2020.</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center" title="Three papers accepted for publication in IEEE-CEC, 2020 (h5 INDEX: 66)."><a href="accepted.html#IEEECEC2020"><font color="black" >Three papers accepted for publication in IEEE-CEC, 2020 (h5 INDEX: 66).</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center" title="One paper accepted for publication in ECIR, 2020 (Core Ranking: A)."><a href="accepted.html#ECIR2019"><font color="black" >One paper accepted for publication in ECIR, 2020 (Core Ranking: A).</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center" title="One paper accepted for publication in Cognitive Computation Journal 2020."><a href="accepted.html#CC22020"><font color="black" >One paper accepted for publication in Cognitive Computation Journal 2020.</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center" title="One paper accepted for publication in IEEE Transactions on Affective Computing, 2020 (Impact Factor: 6.288)."><a href="accepted.html#IEEEAFFECT2020"><font color="black" >One paper accepted for publication in IEEE Transactions on Affective Computing, 2020 (Impact Factor: 7.512).</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>
+
+<li>		
+		<div class="info">
+		<p align="center" title="One paper accepted for publication in Expert Systems with Applications (Impact Factor: 4.292)."><a href="accepted.html#ES2020"><font color="black" >One paper accepted for publication in Expert Systems with Applications (Impact Factor: 4.292).</font></a></p>
+					
+		</div>
+				<div class="clear"></div>
+			</li>        </ul>
+    </div>
+    <!-- ###################################### NOTICES ENDS HERE######################################## -->
+          
+          </div>
+          
+          
+        </div>
+        <div class="left-column-panel-bottom"><p class="right" align="right"><a href="notices.html">View All &raquo;</a></p></div>
+      </div>
+        <div class="left-column-panel">
+      <!--  <div class="left-column-panel-top"></div>-->
+        <div class="left-column-panel-middle">
+  
+          
+          <h1><font color="#991e70">Research and Development</font></h1><br>
+          
+          
+          
+          <div class="sub-menu">
+           <h2 align="center"><a style="text-decoration: none" href="collaboration.html" ><font  color="black">Collaboration</font></a></h2>
+         <a href="collaboration.html" ><img id="shape4" src="img/coll.jpg" width=220px height=150px alt=""></a> 
+         <!-- Image taken from https://pixabay.com/ -->      
+          </div>
+         <br> 
+	 <div class="sub-menu">
+	<h2><a style="text-decoration: none" href="cproject.html" ><font  color="black">Current Projects</font></a></h2>
+         
+         <a href="cproject.html" ><img id="shape4" src="img/project.jpg" width=220px height=150px alt=""></a>   
+         <!-- Image taken from https://pixabay.com/ -->      
+          </div>
+          
+        </div>
+       <!-- <div class="left-column-panel-bottom"></div>-->
+      </div>
+    </div>
+
+    <!-- ##################################### LEFT COLUMN ENDS HERE ############################################### -->
+<div class="right-column">
+         <!-- ####### SEARCH CODE STARTS HERE ####### -->
+	<table align="right">
+	<tbody>
+	<tr>
+	<td>
+		<gcse:search></gcse:search>
+	</td>
+	</tr>
+	</tbody>
+	</table>    
+    <!-- ####### SEARCH CODE ENDS HERE ####### --><br>
+      <div class="right-column-heading">
+        <h1><font color="#991e70"><b>Publications in Journals</b></font></h1>
+        <br>
+      </div>
+
+<div class="right-column-content">
+<h2><font color="black">2023</font></h2>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+P. Priya, M. Firdaus, A. Ekbal (2023), <I>A Multi-task Learning Framework for Politeness and Emotion Detection in Dialogues for Mental Health Counseling and Legal Aid.</I> <b> Expert Systems With Applications. (h5-index: 132, Impact Factor: 8.665)</b></p>
+</div>
+	
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+D. Varshney, A. Zafar, N. Behera, A. Ekbal (2023), <I>Knowledge Grounded Medical Dialogue Generation using Augmented Graphs.</I> <b>Scientific Reports (h5 index: 206).</b></p>
+</div>
+
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+D. Varshney, M. Tiwari, G P Nagaraja, A. Ekbal (2023), <I>EmoKbGAN : Emotion Controlled Response Generation using Generative Adversarial Network for Knowledge Grounded Conversation.</I> <b>In Plosone (With Samsung Research) (h5 index: 186).</b></p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+Z. Ahmad, A. Ekbal. S. Sengupta, P. Bhattacharyya (2023), <I>Neural Response Generation for Task Completion using Conversational Knowledge Graph.</I> <b>In Plosone (with Accenture) (h5 index: 186).</b></p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+G. Kumari, D. Bandyopadhyay, A. Ekbal (2023), <I>EmoffMeme: Identifying Offensive Memes by leveraging underlying Emotions.</I> <b>Multimedia Tools and Applications, Springer (h5 index: 87).</b></p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+G. Singh, M. Firdaus, A. Ekbal and P. Bhattacharyya (2023), <I>Affect-GCN: A Multimodal Graph Convolutional Network for Multi-Emotion with Intensity Recognition and Sentiment Analysis in Dialogues.</I> <b>Multimedia Tools and Applications, Springer (h5 index: 87).</b></p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+S. Kumar, T. Ghosal and A. Ekbal (2023), <I>DeepMetaGen: An Unsupervised Deep Neural Approach to Generate Template-based Meta Reviews Leveraging on Aspect Category and Sentiment Analysis from Peer Reviews.</I> <b>International Journal of Digital Libraries, Springer (IF-1.9).</b></p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+Mauajama Firdaus, Asif Ekbal, Erik Cambria (2023), <I>Multitask learning for multilingual intent detection and slot filling in dialogue systems.</I> <b>Information  Fusion, Elsevier (IF: 17.56).</b></p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+S. Ghosh, A. Priyanka, A.Ekbal and P. Bhattacharyya (2023), <I>Multitasking of sentiment detection and emotion recognition in code-mixed Hinglish data.</I> <b>Knowl. Based System, Elsevier (IF-8.038).</b></p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+G. Singh, M. Firdaus, A. Ekbal and P.  Bhattacharyya (2023), <I>EmoInt-Trans: A Multimodal Transformer for Identifying Emotions and Intents in Social Conversations.</I> <b>IEEE ACM Trans. Audio Speech Lang. Processing (h5 index: 66; IF-3.919).</b></p>
+</div>
+
+</div>
+
+<div class="right-column-content">
+<h2><font color="black">2022</font></h2>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+ Ghosh, S., Ekbal, A., & Bhattacharyya, P. (2022), <I>VAD-assisted Multitask Transformer Framework for Emotion Recognition and Intensity Prediction on Suicide Notes.</I> <b>Information Processing and Management, Elsevier (Core-A).</b></p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+Ghosh, S., Priyankar, A., Ekbal, A., & Bhattacharyya, P. (2022), <I>Multitasking of Sentiment Detection and Emotion Recognition in Code-Mixed Hinglish Data.</I> <b>Knowledge-Based Systems, Elsevier (Impact Factor: 8.139).</b></p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+Zishan Ahmad, Asif Ekbal, Subhashish Sengupta, Pushpak Bhattachharyya (2022), <I>Neural Response Generation for Task Completion using Conversational Knowledge Graph.</I> <b>PLOS ONE (h5 index: 185).</b></p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+Soumitra Ghosh, Amit Priyankar, Asif Ekbal, Pushpak Bhattacharyya (2022), <I>A Transformer-based Multi-task Framework for Joint Detection of Aggression and Hate on Social Media Data.</I> <b>Natural Language Engineering (Core Rank A), Cambridge University Press.</b></p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+Zishan Ahmad, Vinnakota Sai Sujeeth and Asif Ekbal (2022), <I>Zero-Shot Hate to Non-Hate Text Conversion Using Lexical Constraints.</I> <b>IEEE Transactions on Computational Social Systems.</b>&nbsp;&nbsp; <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9780590" style="text-decoration:none" target="_blank"><font color="blue"><b>Paper</b></a></p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+Tanik Saikh, Tirthankar Ghosal, Amish Mittal, Asif Ekbal, Pushpak Bhattacharyya (2022), <I>ScienceQA: A Novel Benchmark Resource for Question Answering on Scholarly Articles.</I> <b>International Journal on Digital Libraries</b></p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+Kshitij Mishra, Mauajama Firdaus and Asif Ekbal (2022)., <I>Please be Polite: Towards building a Politeness Adaptive Dialogue System for Goal-oriented Conversations.</I> <b>Neurocomputing, Elsevier.</b></p>
+</div>
+
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+M. Firdaus, N. Thangavelu, A. Ekbal and P. Bhattacharyya (2022), <I>I enjoy writing and playing, do you?: A Personalized and Emotion Grounded Dialogue Agent using Generative Adversarial Network.</I> <b>IEEE Transactions on Affective Computing.</b></p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+K. Mishra, M. Firdaus, A. Ekbal (2022), <I>Predicting Politeness Variations in Goal-Oriented Conversations.</I> <b>IEEE Transactions on Computational Social Systems.</b></p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+S. Ghosh, A. Ekbal and P. Bhattacharyya (2022), <I>Deep Cascaded Multitask Framework for Detection of Temporal Orientation, Sentiment and Emotion from Suicide Notes.</I> <b>Scientific Reports, Nature Publishing Group.</b></p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+Z. Ahmad, R. Jindal, Mukuntha NS, A. Ekbal and P. Bhattacharyya (2022), <I> Multi-modality helps in Crisis Management: An Attention-based Deep Learning approach of leveraging Text for Image Classification.</I> <b>Expert System with Applications, Elsevier.</b></p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+Mamta, A. Ekbal, P. Bhattacharyya (2022), <I>Exploring Multi-lingual, Multi-task and Adversarial Learning for Low-resource Sentiment Analysis.</I> <b> ACM Transaction on Asian and Low-resource Language Information Processing (ACM TALLIP).</b></p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+Tirthankar Ghosal, Sandeep Kumar, Prabhat Kumar Bharti, Asif Ekbal, <I>Peer Review Analyze: A Novel Benchmark Resource for Computational Analysis of Peer Reviews.</I> <b>in PLOS ONE (h5 index: 185, Impact Factor: 3.24).</b></p>
+</div>
+
+</div>
+<div class="right-column-content">
+<h2><font color="black">2021</font></h2>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+Tirthankar Ghosal, Tanik Saikh, Tameesh Biswas, Asif Ekbal, and Pushpak Bhattacharyya, <I>Novelty Detection: A Perspective from Natural Language Processing.</I> <b>Computational Linguistics journal (Core Rank A*) by MIT Press.</b></p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+Diksha B., Rahul Grover, NAVEEN SAINI and Sriparna Saha, <I>GenSumm: A Joint Framework for Multi-task Tweet Classification and Summarization using Sentiment Analysis and Generative Modelling.</I> <b>IEEE Transactions on Affective Computing (impact factor 10.506).</b></p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+K. Gupta, R. Haque, A. Ekbal, P. Bhattacharyya and A.Way (2021), <I>Augmenting Training Data with Syntactic Phrasal-Segments in Low-Resource Neural Machine Translation.</I> <b>Machine Translation Journal, Springer.</b></p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+S. Kamila, M. Hasanuzzaman, A. Ekbal and P. Bhattacharyya (2021), <I>Investigating the Impact of Emotion on Temporal Orientation in a Deep Multitask Setting.</I> <b>Scientific Reports.</b></p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+D. Bansal, N. Saini, S. Saha (2021), <I>DCBRTS: A Classification-Summarization Approachfor Evolving Tweet Streams in Multiobjective Optimization Framework.</I> <b>IEEE Access(h5-index: 164).</b></p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+S. Paul, S. Saha, and J. P. Singh (2021), <I>COVID-19 and Cyberbullying: Deep EnsembleModels for Code-switched Languages to Identify Cyberbullying during the Pandemic.</I> <b>Multimedia Tools and Applications(impact factor: 2.757).</b></p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+T. Prashanth, S. Saha, S. Basarkod, S. Aralihalli, S. S. Dhavala, S. Saha , R. Aduri (2021), <I>LipGene: Lipschitz continuity guided adaptive learning rates for fast convergence on Microarray Expression Data Sets.</I> <b>IEEE/ACM Transactions on Computational Biology and Bioinformatics.</b></p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+S. Mishra, G. Rai, S. Saha , P. Bhattacharyya (2021), <I>Efficient Channel Attention based Encoder-Decoder Approach for Image Captioning in Hindi.</I> <b>ACM Transactions on Asian and Low-Resource Language Information Processing.</b></p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+N. Saini, S. Saha, P. Bhattacharyya, S. Mrinal, S. Mishra (2021), <I>On Multi-modal Microblog Summarization.</I> <b>IEEE Transactions on Computational Social Systems.</b></p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+Srivatsa R J, G. Dias, J. J. Andrew, S. Saha , F. MAUREL, S. FERRARI (2021), <I>Multimodal Web Page Segmentation Using Self-organized Multi-objective Clustering.</I> <b>ACM Transactions on Information Systems (impact factor: 2.312).</b></p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+A. Singh, S. Saha, M. Hasanuzzaman (2021), <I>Identifying Complaints based on Semi-Supervised Mincuts.</I> <b>Expert Systems with Applications journal (impact factor: 6.954) (accepted).</b></p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+C. Suman, R. Shyamkant Chaudhary, S. Saha, P. Bhattacharyya (2021), <I>An Attention based Multi-Modal Gender Identification System for Social Media Users.</I> <b>Multimedia Tools and Applications (impact factor: 2.313) (accepted).</b></p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+R. Kumari, Nischal A, T. Ghosal and A. Ekbal. (2022), <I>What the fake? Probing misinformation detection standing on the shoulder of novelty and emotion.</I> <b>Information Processing and Management (IPM), Elsevier</b>&nbsp;&nbsp; <a href="https://www.sciencedirect.com/science/article/pii/S0306457321002223?via%3Dihub" style="text-decoration:none" target="_blank"><font color="blue"><b>Paper</b></a></p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+S. Ghosh, A. Ekbal, P. Bhattacharyya (2021), <I>What Does Your Bio Say? Inferring Twitter Users' Depression Status From Multimodal Profile Information Using Deep Learning.</I> <b>IEEE Transactions on Computational Social Systems</b>&nbsp;&nbsp; <a href="https://ieeexplore.ieee.org/document/9567734/" style="text-decoration:none" target="_blank"><font color="blue"><b>Paper</b></a></p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+ P. Dutta, A. Prakash Patra, S. Saha (2021), <I>DeePROG: Deep Attention-based Model for Diseased Gene Prognosis by Fusing Multi-omics Data.</I> <b>IEEE/ACM Transactions on Computational Biology and Bioinformatics (impact factor: 2.428) (accepted).</b></p>
+</div> 
+ 
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+N. Arya, S. Saha (2021), <I>Generative Incomplete Multi-View Prognosis Predictor for Breast Cancer: GIMPP.</I> <b>IEEE/ACM Transactions on Computational Biology and Bioinformatics (impact factor: 2.428) (accepted).</b></p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+T. Saha, A. Upadhyaya, S. Saha, P. Bhattacharyya (2021), <I>A Multi-task Multi-modal Ensemble Model for Sentiment and Emotion aided Tweet Act Classification.</I> <b>IEEE Transactions on Computational Social Systems (accepted).</b></p>
+</div>
+
+<div class="right-column-content"">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+C. Suman, A. Naman, S. Saha, P. Bhattacharyya (2021), <I>A Multimodal Author Profiling System for Tweets. </I> <b>IEEE Transactions on Computational Social Systems (accepted).</b></p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+ N. Saini, S. Saha (2021), <I>Multi-objective Optimization Techniques: A Survey of the State-of-the-Art and Applications.</I> <b> European Physical Journal Special Topics (impact factor: 1.668) (accepted).</b></p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+ R. Mahapatra, S. Saha, Carlos A. Coello Coello, A. Bhattacharya, Soma S. Dhavala, S. Saha (2021) <I>AdaSwarm: Augmenting gradient-based optimizers in Deep Learning with Swarm Intelligence.</I> <b> IEEE Transactions on Emerging Topics in Computational Intelligence (impact factor: 4.62) (accepted).</b></p>
+</div>
+
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+R. Kumari, Nischal A, T. Ghosal and A. Ekbal. <I>Misinformation detection using multi-task learning with mutual learning for novelty detection and emotion recognition.</I> <b>Information Processing and Management (IPM), Elsevier (IF-4.784, Core-A)</b>&nbsp;&nbsp; <a href="https://www.sciencedirect.com/science/article/pii/S0306457321001254?casa_token=I2fYA2M11c8AAAAA:PWzGpdSyn3vA2gH6rYFt12JJbyucErdd9i0UpgG-Fw1pFdgMFpnRe9TlJfR4m33--KW4XbH1" style="text-decoration:none" target="_blank"><font color="blue"><b>Paper</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.iitp.ac.in/~ai-nlp-ml/resources/codes/Misinformation-Novelty-Emotion-master.zip" style="text-decoration:none" target="_blank"><font color="blue"><b>Code</b></a></p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+T. Saha, D. Gupta, S. Saha, P. Bhattacharyya (2021). <I>A Unified Dialogue Management Strategy for Multi-Intent Dialogue Conversations in Multiple Languages.</I> <b>ACM Transactions on Asian and Low-Resource Language Information Processing (accepted).</b></p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+S. Mishra, N. Saini, S. Saha , P. Bhattacharyya (2021). <I>Scientific Document Summarization in Multi-objective Clustering Framework.</I> <b>Applied Intelligence (impact factor: 3.325) (accepted).</b></p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+A. Tiwari, T. Saha, S. Saha, S. Sengupta, A. Maitra, R. Ramnani, P. Bhattacharyya (2021). <I>A Dynamic Goal Adapted Task-Oriented Dialogue Agent.</I> <b>Plos One (h5 index: 175, impact factor: 2.74) (accepted).</b></p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+C. Suman, A. Raj, S. Saha, P. Bhattacharyya (2021). <I>Authorship Attribution of Micro-text using Capsule Networks.</I> <b>IEEE Transactions on Computational Social Systems (accepted).</b></p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+N. Arya, S. Saha (2021). <I>Multi-Modal Advanced Deep Learning Architectures for Breast Cancer Survival Prediction.</I> <b>Knowledge-Based Systems (impact factor: 5.921) (accepted).</b></p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">D. Paul, A. Jain, S. Saha, J. Mathew (2021). <I>Multi-objective PSO based Online Feature Selection for Multi-label Classification.</I> <b>Knowledge-Based Systems (impact factor: 5.921) (accepted).</b></p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+D. Paul, S. Saha, A. Kumar, J. Mathew (2021). <I>Evolutionary Multi-objective Optimization-based Overlapping Subspace Clustering.</I> <b> Pattern Recognition Letters (impact factor: 3.255) (accepted).</b></p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">
+K. Jha, S. Saha, M. Tanveer (2021). <I>Prediction of Protein-Protein Interactions using Stacked Auto-encoder.</I> <b>Wiley Transactions on Emerging Telecommunications Technologies (impact factor: 1.594)(accepted).</b></p>
+</div>
+
+</div>
+
+
+<div class="right-column-content">
+<h2><font color="black">2020</font></h2>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Dipanjyoti Paul, Rahul Kumar, Sriparna Saha, and Jimson Mathew. <I>Multi-objective Cuckoo Search based Streaming Feature Selection for multi-label Data set.</I> <b>ACM Transactions on Knowledge Discovery from Data (Impact Score: 5.78) </b>(accepted).</p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Apoorva Singh, Sriparna Saha, Mohammed Hasanuzzaman, Kuntal Dey (2021). <I>Multitask Learning for Complaint Identification and Sentiment Analysis.</I> <b>Cognitive Computation, Springer (Impact factor: 4.307).</b></p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">N. Saini, S. Saha , P. Bhattacharyya (2020). <I>Microblog Summarization using Self-adaptive Multi-objective Binary Differential Evolution.</I> <b>Applied Intelligence (impact factor: 3.325, h5-index: 42) </b>(accepted).</p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">S. Ghosh, A. Ekbal and P. Bhattacharyya, (2020). <I>A Multitask Framework to Detect Depression, Sentiment and Multi-label Emotion from Suicide Notes.</I> <b>Cognitive Computation, Springer.</b></p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">S. Mishra, R. Dhir, S. Saha, P. Bhattacharyya (2020). <I>A Hindi Image Caption Generation Framework using Deep Learning.</I> <b>ACM Transactions on Asian and Low-Resource Language Information Processing </b>(accepted).</p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">K. Jha and S. Saha (2020). <I>Incorporation of Multimodal Multiobjective Optimization in Designing a Filter based Feature Selection Technique.</I> <b>Applied Soft Computing (impact factor: 5.472)</b> (accepted). </p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">K. Jha, S. Saha (2020). <I>Amalgamation of 3D Structure and Sequence Information for Protein-Protein Interaction Prediction.</I> <b>Nature Scientific Report </b>(impact factor: 4.120, h5-index: 178) (accepted)</p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">C. Suman, S. Reddy, S. Saha , P. Bhattacharyya (2020). <I>Why Pay More? A Simple and Efficient Named Entity Recognition System for Tweets.</I> <b>Expert Systems with Applications </b>(impact factor: 5.452, h5-index: 111) (accepted). </p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">N Saini, D. Bansal, S. Saha , P. Bhattacharyya (2020). <I>Multi-Objective Multi-View based Search Result Clustering using Differential Evolution Framework.</I> <b>Expert Systems with Applications </b>(impact factor: 5.452, h5-index: 111) (accepted). </p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">S. Paul, S. Saha (2020). <I>CyberBERT: BERT for Cyberbullying Identification.</I> <b>Multimedia Systems</b> (impact factor: 1.563) (accepted).</p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">P. Kapil and A. Ekbal.
+ <I> A Deep Neural Network based Multi-Task Learning Approach to Hate Speech Detection (2020).
+</I> <b>Knowledge based System, Elsevier </b> 
+</p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Santosh Mishra, Rijul Dhir, Sriparna Saha, Pushpak Bhattacharyya, Amit Singh.
+ <I> Image Captioning in Hindi Language using Transformer Networks.
+</I> <b>Computers & Electrical Engineering </b> (impact factor: 2.663) journal. 
+</p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Swagarika Giri, Pratik Dutta, Parth Halani, Sriparna Saha (2020)
+<I>MultiPredGO: Deep Multi-Modal Protein Function Prediction by Amalgamating Protein Structure, Sequence, and Interaction.</I> <b> IEEE Journal of Biomedical and Health Informatics</b> (Impact factor 5.180).</p>
+</div>
+
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Tulika Saha, Sriparna Saha, Pushpak Bhattacharyya.
+ <I> Towards Sentiment aware Multi-modal Dialogue Policy Learning using Hierarchical Reinforcement Learning.
+</I> <b>Cognitive Computation </b> (impact factor: 4.980)
+</p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">M. Firdaus, H. Chouhan, A. Ekbal and P. Bhattacharyya (2020).
+ <I>EmoSen: Generating Sentiment and Emotion Controlled Responses in a Multimodal Dialogue System.</I> <b>IEEE Transaction on Affective Computing </b> (Impact Factor: 7.512).</p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Pratik Dutta, Piyush Mishra, Sriparna Saha.
+ <I> Incomplete Multi-view Gene Clustering with Data Regeneration using Shape Boltzmann Machine
+</I> <b>Computers in Biology and Medicine </b> (impact factor: 3.434) (accepted). 
+</p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">R. Salgotra, U. Singh, S. Saha, A. H. Gandomi (2020).
+ <I>Self Adaptive Cuckoo Search: Analysis and Experimentation.</I> <b>Swarm and Evolutionary Computation </b> (impact factor: 6.912) (accepted).</p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">S. Yadav, S. Ramesh, S. Saha , A. Ekbal (2020).
+ <I>Relation Extraction from Biomedical and ClinicalText: Unified Multitask Learning Framework
+</I> <b> IEEE/ACM Transactions on Computational Biology and Bioinformatics</b> (impact factor: 3.015) (accepted). 
+</p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Tulika Saha, Srivatsa Ramesh, Sriparna Saha, Pushpak Bhattacharyya.
+ <I>BERT-Caps: A Transformer based Capsule Network for Tweet Act Classification" (2020).</I> <b>IEEE Transactions on Computational Social Systems. </b></p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Sayantan Mitra, Sriparna Saha, and Mohammed Hasanuzzaman.
+ <I>Multi-view Clustering for Multi-Omics Data Using Unified Embedding
+</I> <b>Scientific Reports 2020 </b> (h5 index 178, impact factor: 4.120)  . 
+</p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">M. S. Akhtar, T. Garg, and A. Ekbal.
+ <I>Multi-task Learning for Aspect Term Extraction and Aspect Sentiment Classification.</I> <b>Neurocomputing 2020.</b> (impact factor: 4.072)</p>
+</div>
+
+<div class="right-column-content"   style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">P. Dutta, S. Saha , S. Naskar. <I>A Multi-objective based PSO Approach for Inferring Pathway Activity utilizing Protein Interactions.</I> <b>Multimedia Tools and Applications 2020</b> (impact factor: 2.101) .</p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Tulika Saha, Sriparna Saha, Pushpak Bhattacharyya. <I>Towards Sentiment aided Dialogue Policy Learning for Multi-intent Conversations using Hierarchical Reinforcement Learning.</I> <b>PLOS ONE 2020. </b> (h5 index: 176, impact factor: 2.776).</p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">M. S. Akhtar, D. S. Chauhan, and A. Ekbal.
+ <I>A Deep Multi-Task Contextual Attention Framework for Multi-modal Affect Analysis.</I> <b>ACM Transactions on Knowledge Discovery and Data (TKDD) 2020. </b>(impact factor: 2.538)</p></div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Tulika Saha, Dhawal Gupta, Sriparna Saha, Pushpak Bhattacharyya. <I>Towards Integrated Dialogue Policy Learning for Multiple Domains and Intents using Hierarchical Deep Reinforcement Learning.</I> <b>Expert Systems with Applications 2020</b> (impact factor: 4.292, h5-index: 105). </p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Naveen Saini, Sriparna Saha, Sahil Mansoori, Pushpak Bhattacharyya. <I>Fusion of self-organizing map and granular self-organizing map for microblog summarization.</I> <b>Soft Computation 2020 . </b> (Impact Factor: 2.784).</p>
+</div>
+
+<div class="right-co2umn-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Tulika Saha, Dhawal Gupta, Sriparna Saha, Pushpak Bhattacharyya (2020). <I>A Hierarchical Approach for Efficient Multi-Intent Dialogue Policy Learning.</I> <b>Multimedia Tools and Applications 2020 . </b></p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Mauajama Firdaus, Hitesh Golchha, Asif Ekbal, Pushpak Bhattacharyya (2020). <I>A Deep Multi-task Model for Dialogue Act Classification, Intent Detection and Slot Filling.</I> <b>Cognitive Computation Journal 2020</b> (Impact Factor : 4.287).</p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Sabyasachi Kamila, Mohammad Hasanuzzaman, Asif Ekbal, Pushpak Bhattacharyya (2020). <I>Measuring Temporal Distance Focus from Tweets and Investigating its Association with Psycho-demographic Attributes.</I> <b>IEEE Transactions on Affective Computing, 2020 </b> (Impact Factor: 7.512).</p>
+</div>
+
+<div class="right-column-content"   style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Sukanta Sen, Mohammed Hasanuzzaman, Asif Ekbal, Pushpak Bhattacharyya and Andy Way.
+ <I>Neural machine translation of low-resource languages using SMT phrase pair injection.</I> <b>Natural Language Engineering 2020. </b></p>
+
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">M. S. Akhtar, A. Ekbal, and E. Cambria.
+ <I>How Intense Are You? Predicting Intensities of Emotions and Sentiments using Stacked Ensemble.</I> <b>IEEE Computational Intelligence Magazine (CIM) 2020. </b>(impact factor: 5.857)</p>
+</div>
+
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Dipanjyoti Paul, Sriparna Saha, Jimson Mathew (2020). <I>Improved Subspace Clustering Algorithm using Multi-objective Framework and Subspace Optimization.</I> <b>Expert Systems with Applications 2020</b> (Impact Factor : 4.292).</p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Tulika Saha, Dhawal Gupta, Sriparna Saha, Pushpak Bhattacharyya (2020). <I>Emotion Aided Dialogue Act Classification for Task-Independent Conversations in a Multi-modal Framework.</I> <b>Cognitive Computation Journal 2020</b> (Impact Factor : 4.287).</p>
+</div>
+</div>
+
+<div class="right-column-content">
+<h2><font color="black">2019</font></h2>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Pratik Dutta, Sriparna Saha, Sanket Pai and Aviral Kumar (2019). Protein-protein Interaction based Generative Model for Improving Gene Clustering.<b>Scientific Reports- Nature, 2019</b>. (Impact Factor: 4.15) <a href="https://github.com/sduttap16/PPI_Generative" style="text-decoration:none" target="_blank"><font color="black"><b>Code Link</b>.</font></a></p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Tirthankar Ghosal, Vignesh Edithal, Asif Ekbal and Pushpak Bhattacharyya (2019). Is Your Document Novel? Let Attention Guide You. An Attention-Based Model For Document Level Novelty Detection, <b>Natural Language Engineering 2019</b>.</p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">N. Saini, S. Saha, D. Chakraborty, P. Bhattacharyya (2019). Extractive single document summarization using binary differential evolution: Optimization of difference sentence quality measures, <b>Plos One 2019</b> (impact factor: 2.76, h5 index: 176).</p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">S. Mishra, S. Saha, S. Mondal, Carlos A. Coello Coello (2019). Divide-and-Conquer Based Non-dominated Sorting with Reduced Comparisons, <b>Swarm and Evolutionary Computation 2019</b> (impact factor: 6.330).</p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">N. Saini,  S. Saha,  V. Potnuru,  R. Grover,  P. Bhattacharyya (2019). Figure-Summarization: A Multiobjective optimization based approach, <b>IEEE Intelligent Systems 2019</b> (impact factor: 4.464).</p> 
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Naveen Saini, Sriparna Saha, Pushpak Bhattacharyya (2019). Multi-objective Based Approach for Microblog Summarization. <b>IEEE Transactions on Computational Social Systems</b>.</p>
+</div>
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Sayantan Mitra, Mohammed Hasanuzzaman, Sriparna Saha (2019). Unified Multi-view Clustering Algorithm using Multi-objective Optimization Coupled with Generative Model, <b>ACM Transactions on Knowledge Discovery from Data</b>.</p>
+</div>
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Naveen Saini, Sriparna Saha, Pushpak Bhattacharyya, Himanshu Tuteja (2019). Textual Entailment based  Figure Summarization for Biomedical Articles. <b>ACM Transactions on Multimedia Computing Communications and Applications</b>.</p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Naveen Saini, Sriparna Saha, Chirag Soni, Pushpak Bhattacharyya (2019). Automatic Evolution of Bi-clusters from Microarray Data using Self-Organized Multi-objective Evolutionary Algorithm. <b>Springer Applied Intelligence</b>.</p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">M. S. Akhtar, D. Ghosal, A. Ekbal, P. Bhattacharyya, and S. Kurohashi.
+ <I>All-in-One: Emotion, Sentiment and Intensity Prediction using a Multi-task Ensemble Framework.</I> <b>IEEE Transactions on Affective Computing 2019. </b>(Impact Factor: 7.512)</p>
+</div>
+
+<div class="right-column-content"  style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Ahmad, Zishan, Raghav Jindal, Asif Ekbal, and Pushpak Bhattachharyya (2019). Borrow from Rich Cousin: Transfer Learning for Emotion Detection using Cross Lingual Embedding. <b>Expert Systems with Applications</b><a href="https://www.sciencedirect.com/science/article/pii/S0957417419305536?via%3Dihub" style="text-decoration:none" target="_blank"><font color="black"> (Impact Factor: 4.292). <b>Link</b>.</font></a></p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Deepak Gupta, Asif Ekbal and Pushpak Bhattacharyya (2019).  A Deep Neural Network Framework for English Hindi Question Answering. <b>ACM Transaction on Asian and Low-resource Language Information Processing (ACM TALLIP)</b>.</p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Pratik Dutta, Sriparna Saha, Saraansh Chopra, and Varnika Miglani (2019). <I>Ensembling of Gene Clusters utilizing Deep Learning and Protein-protein Interaction Information</I> <b>IEEE/ACM TCBB</b>.</p> 
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Sayantan Mitra, Sriparna Saha (2019). <I>A Multiobjective Multi-view Cluster Ensemble Technique: Application in Patient Subclassification</I>, <b>PLoS One</b> (h5-index: 180).</p>
+</div>
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Sabyasachi Kamila, Mohammad Hasanuzzaman, Asif Ekbal and Pushpak Bhattacharyya (2019). <I>Resolution of grammatical tense into actual time, and its application in Time Perspective study in the tweet space</I>, <b>PLoS One</b> (h5-index: 180). <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0211872" style="text-decoration:none" target="_blank"><font color="black"><b>Link</b>.</font></a></p>
+</div>
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Pratik Dutta, Sriparna Saha and Saurabh Gulati (2019). <I>Graph-based Hub Gene Selection Technique using Protein Interaction Information: Application to  Sample Classification</I> <b>IEEE Journal of Biomedical and Health Informatics</b> (Impact Factor: 3.85).</p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Debajyoty Banik, Asif Ekbal, Pushpak Bhattacharyya (2019). Machine Learning Based Optimized Pruning Approach for Decoding in Statistical Machine Translation. <b>IEEE Access journal</b>.</p>
+</div>
+
+<div class="right-column-content-noborder">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Debajyoty Banik, Asif Ekbal, Pushpak Bhattacharyya, Siddhartha Bhattacharyya (2019). Assembling Translations from Multi-Engine Machine Translation. <b>Applied Soft Computing</b>.</p>
+</div>
+</ol>
+</div>
+
+
+<div class="right-column-content">
+<h2><font color="black">2018</font></h2>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Debajyoty Banik, Asif Ekbal, Pushpak Bhattacharyya (2018). Phrase Table Re-adjustment in Statistical Machine Translation. <b>International Journal of Engineering and Technology (UAE)</b>.</p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Tanik Saikh, Debajyoty Banik, Asif Ekbal, Pushpak Bhattacharyya (2018). The Use of Machine Translation Evaluation Metrics to Recognize the Textual Entailment, <b>journal Research in Computing Science (RCS)</b>.</p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Md Shad Akhtar, Asif Ekbal, Sunny Narayan and Vikram Singh (2018). No that never happened!! Investigating Rumours in Twitter. <b>IEEE Intelligent Systems</b>, vol. 33, no. 5, pages 8-15.</p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Sabyasachi Kamila, Mohammad Hasanuzzaman, Asif Ekbal and Pushpak Bhattacharyya (2018). <I>Tempo-HindiWordNet: A Lexical Knowledge-base for Temporal Information Processing</I>, <b>ACM TALLIP 2018</b>. <a href="https://dl.acm.org/citation.cfm?id=3277504" style="text-decoration:none" target="_blank"><font color="black"><b>Link</b>.</font></a</p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Md Shad Akhtar, Palaash Sawant, Sukanta Sen, Asif Ekbal and Pushpak Bhattacharyya (2018). Improving Word Embedding Coverage in Less-resource Language through Multi-linguality and Cross-linguality: A Case Study with Aspect based Sentiment Analysis, <b>ACM TALLIP 2018</b>.</p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">S. Acharya, S. Saha, P. Pradhan (2018): Multi-factored gene-gene proximity measures exploiting biological knowledge extracted from Gene Ontology : application in gene clustering, <b>IEEE/ACM Transactions on Computational Biology and Bioinformatics</b> (impact factor: 1.955).</p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">S. Mishra, S. Mondal, S. Saha and Carlos A. Coello Coello, "GBOS: Generalized Best Order Sort Algorithm for Non-dominated Sorting", in <b>Swarm and Evolutionary Computation 2018</b> (impact factor: 3.893).</p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Shweta Yadav, Asif Ekbal, Sriparna Saha, "Information Theoretic-PSO based Feature Selection: An Application in Biomedical Entity Extraction", in <b>Knowledge and Information Systems 2018</b> (impact factor: 2.004).</p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">R. Sengupta and Sriparna Saha, "Reference Point based Archived Many Objective Simulated Annealing", in <b>Information Sciences 2018</b> (impact factor: 4.832).</p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Sudipta Acharya, Sriparna Saha , Pracheta Sahoo, "Bi-clustering of Microarray Data using a Symmetry based Multi-objective Optimization Framework", in <b>Soft Computing 2018</b> (impact factor: 2.472).</p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">S. Saha , M. Kaur (2018): Identification of Topology Preserving, Class-Relevant Feature Subsets using Multiobjective Optimization, <b>Soft Computing</b> ( impact factor: 2.472).</p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Sriparna Saha, Sayantan Mitra, Stefan Kramer, "Exploring Multiobjective Optimization for Multi-view Clustering", 
+<b>ACM Transactions on Knowledge Discovery from Data</b> .</p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Debajyoty Banik, Asif Ekbal, Pushpak Bhattacharyya, "Phrase Table Re-adjustment in Statistical Machine Translation", 
+<b>International Journal of Engineering and Technology (UAE)</b>, 2018.</p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Sayantan Mitra, Sriparna Saha, Sudipta Acharya (2018). Fusion of Stability and Multi-objective Optimization for Solving Cancer Tissue Classification Problem, Expert Systems with Applications.</p>
+</div>
+
+<div class="right-column-content-noborder" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Tanik Saikh, Debajyoty Banik, Asif Ekbal, Pushpak Bhattacharyya, "The Use of Machine Translation Evaluation Metrics to Recognize the Textual Entailment", <b>Journal Research in Computing Science (RCS)</b>, 2018.</p>
+</div>
+
+
+</div>
+<div class="right-column-content">
+<h2><font color="black">2017</font></h2>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">S. Saha , S. Acharya, Kavya K, Saisree (2017): Simultaneous Clustering and Feature Weighting using Multiobjective Optimization for Identifying Functionally Similar miRNAs, <b>IEEE Journal of Biomedical and Health Informatics</b>  (impact factor: 3.451).</p>
+</div>
+
+<div class="right-column-content">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">S. Acharya, S. Saha, N. Nikhil (2017): Unsupervised gene selection using biological knowledge : application in sample clustering, <b>BMC Bioinformatics</b>  (impact factor: 2.448, h5-index: 62).
+</p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">P. Dutta, S. Saha, "Fusion of expression values and protein interaction information using multi-objective optimization for improving gene clustering", <b>Computers in Biology and Medicine</b>(impact factor: 1.836), 2017.</p>
+</div>
+
+<div class="right-column-content">
+<p align="justify"">S. Akhtar, D. Gupta, A. Ekbal and P. Bhattacharyya. "Feature Selection and Ensemble Construction: A Two-step Method for Aspect Based Sentiment Analysis", <b>Knowledge-Based Systems</b>, Elsevier, 2017.</p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+<p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">S. Yadav, A. Ekbal and S. Saha, "Feature Selection for Entity Extraction from Multiple Biomedical Corpora: A PSO based Approach", <b>Soft Computing Journal</b>, Springer, 2017.</p>
+</div>
+
+<div class="right-column-content-noborder">
+         <p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">Sriparna Saha, Sayantan Mitra, Ravi Kant Yadav (2017). A stack-based ensemble framework for detecting cancer microRNA biomarkers, Genomics, proteomics & bioinformatics.</p> 
+</div> 
+
+</div>
+<div class="right-column-content">
+<h2><font color="black">2016</font></h2>
+
+<div class="right-column-content">
+         <p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">S. Acharya, S. Saha, "Importance of Proximity Measures in Clustering of Cancer and miRNA Datasets:Proposal of an Automated Framework.", in <b>Molecular BioSystems</b>(IF:2.829), 2016.</p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+	     <p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">S. Mishra, S. Saha, S. Mondal "A Multiobjective Optimization based Entity Matching Technique for Bibliographic Databases", in <b>Expert Systems With Applications Journal</b>.</p>
+</div>
+
+<div class="right-column-content">
+         <p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">U. K. Sikdar, A. Ekbal and S. Saha, "A Generalized Framework for Anaphora Resolution in Indian Languages", in <b>Knowledge based Systems</b>, Elsevier</p>
+</div>
+
+<div class="right-column-content" style="background-color: #f9f9f9;">
+         <p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">S. Saha, S. Mitra, and R. K. Yadav (2016): A Multiobjective Based Automatic Framework for Classifying Cancer-microRNA Biomarkers, <b>Gene Reports</b> (expanded version of Gene (impact factor: 2.138))</p>
+</div>
+
+<div class="right-column-content-noborder">
+         <p align="justify" style=" display: list-item;  margin-left: 1.0em;  list-style-type: square; ">S. Saha, A. Alok, A. Ekbal (2016): Brain Image Segmentation using Semi-supervised Clustering, <b>Expert Systems with Applications</b>  (impact factor: 2.240)</p>
+  </div>    
+
+
+     </div>
+    </div>
+  </div>
+</div>
+   <div class="footer">
+  <div class="copy-rights">Copyright &copy; 2016-Current - All Rights Reserved - AI-NLP-ML Group, Department of CSE, IIT Patna; Website Designed & Developed by Sabyasachi Kamila</div>
+</div>
+    
+    </div>
+
+</body>
+</html>

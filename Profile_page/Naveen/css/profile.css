@@ -1,0 +1,65 @@
+html {
+	background-color: #802b00;
+}
+.profile{
+	height: 18em;
+	background-color: #f2f2f2;
+}
+.container {
+
+}
+
+span {
+	display: inline-block;
+	padding: 1em;
+}
+.profile_photo{
+	height: 11em;
+	width: 9em;
+	position: relative;
+	top: -4.5em;
+}
+#home_btn {
+	background-color: red;
+}
+#home_content   {
+	padding: 2em;
+	width: 60%;
+}
+#education_content {
+	padding: 2em;
+	width: 60%;
+	display: none;
+}
+#research_content {
+	padding: 2em;
+	width: 60%;
+	display: none ;
+}
+#industry_experience_content {
+	padding: 2em;
+	width: 60%;
+	display: none;
+	
+}
+#content_divs {
+	height: 80vh;
+	background-color: #f2f2f2;
+	text-align: justify;
+}
+.footer {
+	width:100%;
+	height:100px;
+	margin:0 auto;
+}
+.copy-rights {
+	width:1256px;
+	height:60px;
+	line-height:60px;
+	text-align:center;
+	background:url(../images/bg_footer.png) no-repeat;
+	color:#000000;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+	margin:0 auto;
+	margin-top:30px;
+}
